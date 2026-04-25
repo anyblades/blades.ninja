@@ -1,0 +1,11 @@
+{% extends 'blades/html.njk' %}
+
+{% set content_for_header %}
+  <link rel="canonical" href="https://blades.ninja/build-awesome-11ty/starters/" />
+{% endset %}
+
+{% block body %}
+  <main class="container breakout-all"><br><br>
+    {{ content | safe }}
+  </main>
+{% endblock %}
