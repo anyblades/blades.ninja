@@ -4,7 +4,7 @@ permalink: /
 
 # 🥷 *S*ubtle
 
-Probably the most `.subtle` blog generator (yet flexible thanks to [11ty plugin](https://blades.ninja/build-awesome-11ty/), [Pico fork](https://blades.ninja/css/pico/) and other [*Bl*ades](https://blades.ninja/)) 🥷
+Probably the most `.subtle` blog generator (yet flexible thanks to [11ty plugin](https://github.com/anyblades/eleventy-blades), [Pico](https://github.com/anyblades/pico) and other [*Bl*ades](https://github.com/anyblades/blades)) 🥷
 
 ![](https://img.shields.io/github/v/release/anyblades/subtle?label=&color=darkslategray&style=for-the-badge)
 [![](https://img.shields.io/badge/Code-gainsboro?logo=github&logoColor=black&style=for-the-badge)](https://github.com/anyblades/subtle)
