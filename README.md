@@ -2,4 +2,4 @@
 permalink: /
 ---
 
-# 🥷 *Bl*adeswitch 11ty *Un*starter
+# 🥷 *S*ubtle <br><sub>[*Eleventy Bl*ades](https://github.com/anyblades/eleventy-blades) Unstarter</sub>
