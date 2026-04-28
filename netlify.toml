@@ -1,4 +1,3 @@
 [build]
-  base = ".subtle"
-  command = "npm run build"
-  publish = "_site"
+  command = "cd ./.subtle/ && npm run build"
+  publish = "./.subtle/_site/"
