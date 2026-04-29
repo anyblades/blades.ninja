@@ -4,7 +4,7 @@ permalink: /
 
 # 🥷 *S*ubtle
 
-<big>Probably the most `.subtle` content-first site starter, <br class="opt">
+<big>Probably the most `.subtle` starter for content-first sites/blogs, <br class="opt">
 yet customizable thanks to [11ty plugin](https://github.com/anyblades/eleventy-blades), [Pico](https://github.com/anyblades/pico) and other [*Bl*ades](https://github.com/anyblades/blades).</big>
 
 ![](https://img.shields.io/github/v/release/anyblades/subtle?label=&color=darkslategray&style=for-the-badge)
