@@ -2,9 +2,10 @@ import baseConfig from "@anyblades/eleventy-blades/base-config";
 import { readFileSync } from "node:fs";
 
 export default function (eleventyConfig) {
-  eleventyConfig.setIncludesDirectory(".subtle/_includes/");
+  eleventyConfig.setIncludesDirectory("./.subtle/_includes/");
   baseConfig(eleventyConfig);
 
+  eleventyConfig.addPassthroughCopy({ "./.subtle/_public/": "." });
   eleventyConfig.addPassthroughCopy("../**/*.png");
 
   //TODO: move to 11ty-blades?
