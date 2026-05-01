@@ -4,10 +4,10 @@ eleventyNavigation:
   key: <i class="fa-solid fa-link"></i> Icon
   order: 3
 title: '<em>L</em>ink <code style="padding: 0">i</code>con'
-eleventyComputed:
-  summary: |-
-    {{ 'https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/link-icon.css'
-     | if: site.prod | default: '../../blades/src/link-icon.css' | fetch | section: 'summary' | markdownify }}
+# eleventyComputed:
+#   summary: |-
+#     {{ 'https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/link-icon.css'
+#      | if: site.prod | default: '../../blades/src/link-icon.css' | fetch | section: 'summary' | markdownify }}
 
 includes:
   - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/link-icon.css

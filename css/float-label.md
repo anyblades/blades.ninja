@@ -4,10 +4,10 @@ eleventyNavigation:
   key: <i class="fa-solid fa-picture-in-picture fa-flip-both"></i> Label
   order: 2
 title: <em>Fl</em>oat label <small>CSS</small>
-eleventyComputed:
-  summary: |-
-    {{ 'https://raw.githubusercontent.com/anyblades/float-label-css/refs/heads/master/README.md'
-     | if: site.prod | default: '../../float-label-css/README.md' | fetch | section: 'summary' | markdownify }}
+# eleventyComputed:
+#   summary: |-
+#     {{ 'https://raw.githubusercontent.com/anyblades/float-label-css/refs/heads/master/README.md'
+#      | if: site.prod | default: '../../float-label-css/README.md' | fetch | section: 'summary' | markdownify }}
 
 includes:
   - text: |-

@@ -32,13 +32,13 @@ site:
         }
         a { overflow: visible }
       }
-eleventyComputed:
-  #TODO: add to tricks
-  summary: |-
-    {{ 'https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md'
-     | if: site.prod | default: '../../blades/README.md' | fetch | section: 'summary' | markdownify }}
-  site.title: "{{ site.title }} | {{ summary | split: '</hgroup>' | first | strip_html }}"
-  hero: "<br>{{ summary | replace: 'hgroup>', 'h1>' | replace: '<wbr>', '<br>' }}<br>"
+# eleventyComputed:
+#   #TODO: add to tricks
+#   summary: |-
+#     {{ 'https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md'
+#      | if: site.prod | default: '../../blades/README.md' | fetch | section: 'summary' | markdownify }}
+#   site.title: "{{ site.title }} | {{ summary | split: '</hgroup>' | first | strip_html }}"
+#   hero: "<br>{{ summary | replace: 'hgroup>', 'h1>' | replace: '<wbr>', '<br>' }}<br>"
 
 includes:
   - text: |-

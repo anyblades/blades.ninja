@@ -4,10 +4,10 @@ eleventyNavigation:
   key: <i class="fa-solid fa-tv fa-flip-both"></i> Breakout
   order: 5
 title: <em>Br</em>eakout layout
-eleventyComputed:
-  summary: |-
-    {{ 'https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/breakout.css'
-     | if: site.prod | default: '../../blades/src/breakout.css' | fetch | section: 'summary' | markdownify }}
+# eleventyComputed:
+#   summary: |-
+#     {{ 'https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/breakout.css'
+#      | if: site.prod | default: '../../blades/src/breakout.css' | fetch | section: 'summary' | markdownify }}
 
 includes:
   - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/breakout.css

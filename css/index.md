@@ -5,10 +5,10 @@ eleventyNavigation:
   title: Docs
   order: 0
 title: <em>Bl</em>ades <small>CSS</small>
-eleventyComputed:
-  summary: |-
-    {{ 'https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md'
-     | if: site.prod | default: '../../blades/README.md' | fetch | section: 'summary' | strip_tag: 'big' | markdownify }}
+# eleventyComputed:
+#   summary: |-
+#     {{ 'https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md'
+#      | if: site.prod | default: '../../blades/README.md' | fetch | section: 'summary' | strip_tag: 'big' | markdownify }}
 
 includes:
   - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md
