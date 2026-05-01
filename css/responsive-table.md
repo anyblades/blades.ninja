@@ -1,6 +1,5 @@
 ---
 eleventyNavigation:
-  parent: css
   key: <i class="fa-solid fa-mobile-screen-button"></i> Table
   order: 4
 title: <em>Re</em>sponsive table <sub>without wrapping container</sub>

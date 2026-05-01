@@ -1,6 +1,5 @@
 ---
 eleventyNavigation:
-  parent: css
   key: <i class="fa-solid fa-picture-in-picture fa-flip-both"></i> Label
   order: 2
 title: <em>Fl</em>oat label <small>CSS</small>

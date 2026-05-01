@@ -1,6 +1,5 @@
 ---
 eleventyNavigation:
-  parent: css
   key: <i class="fa-solid fa-tv fa-flip-both"></i> Breakout
   order: 5
 title: <em>Br</em>eakout layout

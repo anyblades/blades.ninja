@@ -1,6 +1,5 @@
 ---
 eleventyNavigation:
-  parent: css
   key: <i class="fa-solid fa-link"></i> Icon
   order: 3
 title: '<em>L</em>ink <code style="padding: 0">i</code>con'
