@@ -1,7 +1,9 @@
 # Serve normally
 /                     / 200
 /html/                /html/ 200
-/css/*                /css/:splat 200
+
+# CSS => Docs
+/css/*                /docs/:splat 301
 
 # 11ty subsite
 /build-awesome-11ty/* https://11ty.blades.ninja/:splat 301

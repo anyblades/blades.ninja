@@ -1,8 +1,6 @@
 ---
-permalink: /css/
 eleventyNavigation:
-  key: css
-  title: Docs
+  key: Get started
   order: 0
 title: <em>Bl</em>ades <small>CSS</small>
 # eleventyComputed:

@@ -3,21 +3,16 @@
 {% set content_for_header %}
   <link rel="canonical" href="https://11ty.blades.ninja/starters/" />
   <style>
-    body > :is(header, footer) {
-      padding-block: 2rem;
-      text-align: center;
+    main {
+      display: flex; overflow: clip;
+      > iframe { width: 100%; max-width: 1023px; margin: -200px auto 0 auto }
     }
     a[role="button"] {
       text-align: start;
       border-width: 1px 0 0 1px;
       margin: 0 0 0.5rem -1rem;
     }
-    /*TODO: move to blades-css */
-    .breakout-all > img {
-      min-width: auto !important;
-    }
     .opt { @media screen and (max-width: 767px) { display: none } }
-    .borderless th { padding-inline-start: 2rem !important }
   </style>
 {% endset %}
 
@@ -27,7 +22,7 @@
       <big><big><a href="/"><i>🥷</i> <span><em>Bl</em>ades</span></a></big></big>
       <ul>
         <li><details class="dropdown"><summary>Docs</summary>
-          {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | replace('<ul>', '<ul dir="rtl">') | safe }}
+          {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
         </details></li>
         <li class="faded">|</li>
         <li><a href="https://github.com/anyblades/blades"><i class="fa-brands fa-github fa-lg"></i></a></li>
@@ -35,10 +30,18 @@
       </ul>
     </nav>
   </header>
-  <main class="container breakout-all">
-    <h1>{{ title }}</h1>
-    <p><big>{{ description }}</big></p>
-    {{ content | safe }}
+  <main>
+    {% if iframe %}
+      <iframe src="{{ iframe }}"></iframe>
+    {% else %}
+      <div class="container breakout-all">
+        <h1>{{ title }}</h1>
+        <p><big>{{ description }}</big></p>
+        {{ content | safe }}
+      </div>
+    {% endif %}
   </main>
-  <footer class="container"><hr>Footer</footer>
+  <footer class="container">
+    Footer
+  </footer>
 {% endblock %}
