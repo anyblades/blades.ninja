@@ -21,8 +21,8 @@
     <nav>
       <big><big><a href="/"><i>🥷</i> <span><em>Bl</em>ades</span></a></big></big>
       <ul>
-        {% for _parent in ['Docs', 'Layout'] %}
-        <li><details class="dropdown"><summary>{{ _parent }}</summary>
+        {% for _parent in ['Docs', 'Layout', 'Content', 'Forms'] %}
+        <li><details class="dropdown"><summary role="link">{{ _parent }}</summary>
           {{ collections.all | eleventyNavigation(_parent) | eleventyNavigationToHtml | safe }}
         </details></li>
         {% endfor %}
@@ -37,7 +37,7 @@
       <iframe src="{{ iframe }}"></iframe>
     {% else %}
       <div class="container breakout-all">
-        <h1>{{ title }}</h1>
+        <h1>{{ title | safe }}</h1>
         <p><big>{{ description }}</big></p>
         {{ content | safe }}
       </div>

@@ -1,7 +1,8 @@
 ---
 eleventyNavigation:
-  key: <i class="fa-solid fa-mobile-screen-button"></i> Table
-  order: 4
+  parent: Content
+  key: Responsive table <mark>NEW</mark>
+  order: 7
 title: <em>Re</em>sponsive table <sub>without wrapping container</sub>
 # eleventyComputed:
 #   summary: |-

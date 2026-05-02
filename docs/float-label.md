@@ -1,6 +1,7 @@
 ---
 eleventyNavigation:
-  key: <i class="fa-solid fa-picture-in-picture fa-flip-both"></i> Label
+  parent: Forms
+  key: Float labels <mark>NEW</mark>
   order: 2
 title: <em>Fl</em>oat label <small>CSS</small>
 # eleventyComputed:
