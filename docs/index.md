@@ -3,13 +3,16 @@ eleventyNavigation:
   parent: Docs
   key: Get started
   order: 0
-title: <em>Bl</em>ades <small>CSS</small>
+title: <sup>Getting started</sup> Quick start
 # eleventyComputed:
 #   summary: |-
 #     {{ 'https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md'
 #      | if: site.prod | default: '../../blades/README.md' | fetch | section: 'summary' | strip_tag: 'big' | markdownify }}
 
 includes:
+  - path: https://raw.githubusercontent.com/anyblades/pico/refs/heads/main/README.md
+    section: docs
+
   - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md
     section: install
   - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/blades.theme.css
