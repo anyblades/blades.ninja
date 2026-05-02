@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "subtle.blades.ninja",
+  "name": "blades.ninja",
   "type": "module",
   "scripts": {
     "start": "npm run build -- --serve",
@@ -16,7 +16,7 @@
   },
   "=== SITE GLOBALS": "===",
   "site": {
-    "title": "Subtle",
+    "title": "Blades",
     "styles": [
       "https://cdn.jsdelivr.net/npm/@anyblades/blades@0/assets/pico.blades.min.css",
       "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7/css/all.min.css",

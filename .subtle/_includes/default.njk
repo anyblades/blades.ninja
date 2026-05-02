@@ -21,9 +21,11 @@
     <nav>
       <big><big><a href="/"><i>🥷</i> <span><em>Bl</em>ades</span></a></big></big>
       <ul>
-        <li><details class="dropdown"><summary>Docs</summary>
-          {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
+        {% for _parent in ['Docs', 'Layout'] %}
+        <li><details class="dropdown"><summary>{{ _parent }}</summary>
+          {{ collections.all | eleventyNavigation(_parent) | eleventyNavigationToHtml | safe }}
         </details></li>
+        {% endfor %}
         <li class="faded">|</li>
         <li><a href="https://github.com/anyblades/blades"><i class="fa-brands fa-github fa-lg"></i></a></li>
         <li><a href="https://x.com/any_blades"><i class="fa-brands fa-x-twitter fa-lg"></i></a></li>
