@@ -30,7 +30,7 @@ includes:
   #   section: tricks
 ---
 
-<section style="display: grid; place-items: center; min-height: calc(100dvh - 250px)">
+<section style="display: grid; place-items: center; min-height: calc(100dvh - 200px)">
   <div style="text-align: center; text-wrap: balance"><br>
 
 # <mark>Minimal CSS&nbsp;Framework</mark> <br> for Semantic&nbsp;HTML
