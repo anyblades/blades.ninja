@@ -3,35 +3,13 @@ permalink: /
 site:
   inline_styles:
     - |-
-      h1 {
-        margin-block-start: 0;
-        @media (max-width: 767px) { font-size: 1.75em }
+      h1 mark {
+        background: linear-gradient(to right, rgb(215.4, 140.8, 210.2), rgb(184.5, 153, 237.75), rgb(156.6, 165.3, 232.6), rgb(142.75, 168.95, 240.05));
+        background-clip: text;
+        color: transparent;
       }
-
-      th, td {
-        padding-inline: 1rem !important;
-        min-width: 10ch;
-        &:first-child { text-align: right; border-right: 2px dotted silver }
-        &:not(:first-child) { width: 16% }
-      }
-      th { font-size: larger }
-      td big { font-weight: bold }
-
       .fa-tailwind-css  { color: deepskyblue }
       .fa-bootstrap     { color: blueviolet }
-
-      #showcase + article {
-        padding-inline: 1.5rem;
-        p {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 0.5rem 1.5rem;
-          margin: 0;
-          font-size: 125%;
-          @media (min-width: 768px) { justify-content: center }
-        }
-        a { overflow: visible }
-      }
 # eleventyComputed:
 #   #TODO: add to tricks
 #   summary: |-
@@ -51,3 +29,20 @@ includes:
   # - path: README.md
   #   section: tricks
 ---
+
+<section style="display: grid; place-items: center; min-height: calc(100dvh - 250px)">
+  <div style="text-align: center; text-wrap: balance"><br>
+
+# <mark>Minimal CSS&nbsp;Framework</mark> <br> for Semantic&nbsp;HTML
+
+Fully compatible and actively maintained successor to Pico CSS.
+
+Includes [Float labels](/docs/float-label/), [Breakout layout](/docs/breakout/) and other modern helpers. Simply switch `pico.css` to `blades.css`, or add `blades.standalone.css` to other frameworks.
+
+<br>
+
+[Get Started &nbsp;›](/docs/){role=button} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[Examples &nbsp;›](/examples/){role=button .contrast}
+
+  </div>
+</section>

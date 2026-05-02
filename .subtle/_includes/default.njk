@@ -4,7 +4,7 @@
   <link rel="canonical" href="https://11ty.blades.ninja/starters/" />
   <style>
     header nav {
-      --pico-primary: var(--pico-color);
+      --pico-primary: var(--pico-contrast);
       align-items: center;
       big a { text-decoration: none; font-weight: bold; font-size: larger; }
     }
@@ -43,8 +43,8 @@
       <iframe src="{{ iframe }}"></iframe>
     {% else %}
       <div class="container breakout-all">
-        <h1>{{ title | safe }}</h1>
-        <p><big>{{ description }}</big></p>
+        {% if title %}<h1>{{ title | safe }}</h1>{% endif %}
+        {% if description %}<p><big>{{ description }}</big></p>{% endif %}
         {{ content | safe }}
       </div>
     {% endif %}
