@@ -3,6 +3,11 @@
 {% set content_for_header %}
   <link rel="canonical" href="https://11ty.blades.ninja/starters/" />
   <style>
+    header nav {
+      --pico-primary: var(--pico-color);
+      align-items: center;
+      big a { text-decoration: none; font-weight: bold; font-size: larger; }
+    }
     main {
       display: flex; overflow: clip;
       > iframe { width: 100%; max-width: 1023px; margin: -200px auto 0 auto }
@@ -19,14 +24,15 @@
 {% block body %}
   <header class="container">
     <nav>
-      <big><big><a href="/"><i>🥷</i> <span><em>Bl</em>ades</span></a></big></big>
+      {#TODO: add "Nav brand" helper #}
+      <big><a href="/">🥷 <em>Bl</em>ades</a></big>
       <ul>
         {% for _parent in ['Docs', 'Layout', 'Content', 'Forms'] %}
         <li><details class="dropdown"><summary role="link">{{ _parent }}</summary>
           {{ collections.all | eleventyNavigation(_parent) | eleventyNavigationToHtml | safe }}
         </details></li>
         {% endfor %}
-        <li class="faded">|</li>
+        <li class="faded opt">|</li>
         <li><a href="https://github.com/anyblades/blades"><i class="fa-brands fa-github fa-lg"></i></a></li>
         <li><a href="https://x.com/any_blades"><i class="fa-brands fa-x-twitter fa-lg"></i></a></li>
       </ul>
