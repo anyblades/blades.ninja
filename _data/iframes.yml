@@ -72,3 +72,40 @@
   parent: Forms
   key: Range
   order: 6
+
+- src: https://picocss.com/docs/accordion
+  parent: Components
+  key: Accordion
+  order: 0
+- src: https://picocss.com/docs/card
+  parent: Components
+  key: Card
+  order: 1
+- src: https://picocss.com/docs/dropdown
+  parent: Components
+  key: Dropdown
+  order: 2
+- src: https://picocss.com/docs/group
+  parent: Components
+  key: Group
+  order: 3
+- src: https://picocss.com/docs/loading
+  parent: Components
+  key: Loading
+  order: 4
+- src: https://picocss.com/docs/modal
+  parent: Components
+  key: Modal
+  order: 5
+- src: https://picocss.com/docs/nav
+  parent: Components
+  key: Navigation
+  order: 6
+- src: https://picocss.com/docs/progress
+  parent: Components
+  key: Progress
+  order: 7
+- src: https://picocss.com/docs/tooltip
+  parent: Components
+  key: Tooltip
+  order: 8
