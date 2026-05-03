@@ -33,6 +33,7 @@ includes:
         </li>
         {% endfor %}
       </ul>
+      <hr>
   - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md
     section: info
 ---

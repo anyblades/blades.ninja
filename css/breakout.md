@@ -11,7 +11,7 @@ title: <em>Br</em>eakout layout
 
 includes:
   - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/breakout.css
-    section: docs,code
+    sections: [docs, code]
   - text: |-
       ---
       ## Install <!-- same as https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md -->

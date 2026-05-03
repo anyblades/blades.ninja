@@ -68,7 +68,9 @@
             | replace('https://raw.githubusercontent.com/anyblades/', '../')
             | replace('/refs/heads/main/', '/') | replace('/refs/heads/master/', '/') %}
         {% endif %}
-        {{ _path | fetch | section(item.section) | markdownify | safe }}
+        {% for _section in item.sections | d([item.section]) %}
+          {{ _path | fetch | section(_section) | markdownify | safe }}
+        {% endfor %}
       {% endif %}
     {% endfor %}
   </main>
