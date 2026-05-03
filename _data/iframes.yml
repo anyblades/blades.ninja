@@ -1,25 +1,42 @@
-- parent: Get started
+- src: https://picocss.com/docs/color-schemes
+  parent: Get started
   key: Color schemes
-  order: 0
-  src: https://picocss.com/docs/color-schemes
-- parent: Get started
-  key: Customization
   order: 1
-  src: https://picocss.com/docs/css-variables
+- src: https://picocss.com/docs/css-variables
+  parent: Get started
+  key: CSS variables
+  order: 2
 
-- parent: Layout
+- src: https://picocss.com/docs/container
+  parent: Layout
   key: Container
   order: 0
-  src: https://picocss.com/docs/container
-- parent: Layout
+- src: https://picocss.com/docs/landmarks-section
+  parent: Layout
   key: Landmarks & section
   order: 1
-  src: https://picocss.com/docs/landmarks-section
-- parent: Layout
+- src: https://picocss.com/docs/grid
+  parent: Layout
   key: Grid
   order: 2
-  src: https://picocss.com/docs/grid
-- parent: Layout
+- src: https://picocss.com/docs/overflow-auto
+  parent: Layout
   key: Overflow auto
   order: 3
-  src: https://picocss.com/docs/overflow-auto
+
+- src: https://picocss.com/docs/typography
+  parent: Content
+  key: Typography
+  order: 0
+- src: https://picocss.com/docs/link
+  parent: Content
+  key: Link
+  order: 1
+- src: https://picocss.com/docs/button
+  parent: Content
+  key: Button
+  order: 3
+- src: https://picocss.com/docs/table
+  parent: Content
+  key: Table
+  order: 4

@@ -2,7 +2,7 @@
 eleventyNavigation:
   parent: Content
   key: Responsive table <mark>NEW</mark>
-  order: 7
+  order: 5
 title: <em>Re</em>sponsive table <sub>without wrapping container</sub>
 # eleventyComputed:
 #   summary: |-
