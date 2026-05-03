@@ -11,25 +11,15 @@ title: <em>Re</em>sponsive table <sub>without wrapping container</sub>
 
 includes:
   - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/responsive-table.css
-    section: docs,code
-  - text: |-
+    sections: [docs, code]
+  - md: |-
       ---
-      ## Install <!-- same as https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md -->
-
-      ###### <mark>Via CDN</mark>
-
-      <!--prettier-ignore-->
+      ## Standalone CDN version
       ```html
       <link rel="stylesheet" href="
         https://cdn.jsdelivr.net/npm/@anyblades/blades@0/assets/responsive-table.min.css
       ">
       ```
-  - text: "###### <mark>Included with</mark>"
-  - teaser: /css/
-    no_toc: true
-  - text: "###### <mark>Included with</mark>"
-  - teaser: /css/pico/
-    no_toc: true
 
-revised: 2026-04-14
+revised: 2026-05-03
 ---
