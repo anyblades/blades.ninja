@@ -1,3 +1,25 @@
 - parent: Get started
   key: Color schemes
+  order: 0
   src: https://picocss.com/docs/color-schemes
+- parent: Get started
+  key: Customization
+  order: 1
+  src: https://picocss.com/docs/css-variables
+
+- parent: Layout
+  key: Container
+  order: 0
+  src: https://picocss.com/docs/container
+- parent: Layout
+  key: Landmarks & section
+  order: 1
+  src: https://picocss.com/docs/landmarks-section
+- parent: Layout
+  key: Grid
+  order: 2
+  src: https://picocss.com/docs/grid
+- parent: Layout
+  key: Overflow auto
+  order: 3
+  src: https://picocss.com/docs/overflow-auto

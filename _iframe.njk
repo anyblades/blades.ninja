@@ -4,12 +4,20 @@ eleventyComputed:
   eleventyNavigation:
     parent: "{{ iframe.parent }}"
     key: "{{ iframe.key }}"
+    order: "{{ iframe.order }}"
 
 pagination:
   data: iframes
   size: 1
   alias: iframe
   addAllPagesToCollections: true
+
+site:
+  inline_styles:
+    - "main { display: flex; overflow: clip }"
 ---
 
-<iframe src="{{ iframe.src }}"></iframe>
+<iframe
+  src="{{ iframe.src }}"
+  style="width: 100%; max-width: 1023px; margin: -200px auto 0 auto"
+></iframe>

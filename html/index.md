@@ -2,7 +2,6 @@
 permalink: /html/
 eleventyNavigation:
   key: <i class="fa-solid fa-code"></i>
-  order: 1
 title: <em>Bl</em>ades <small>HTML</small>
 summary: Generic Nunjucks/Liquid templates for 11ty/Build Awesome, Jekyll, Shopify, etc.
 
