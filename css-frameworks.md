@@ -1,21 +1,21 @@
 ---
+permalink: /css/frameworks/
 eleventyNavigation:
   parent: Get started
-  key: Frameworks
+  key: <i class="fa-solid fa-circle-info"></i> Frameworks
   order: 11
 title: CSS Framework Trends <sub>2026-2040</sub>
 ---
 
-| Framework                                            | Stats                                                                                                                                                 | 2011 | 2016           | 2017           | 2020           | 2025           | 🚥    | _2026_ | _2030_ | _2040_ |
-| ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ---- | -------------- | -------------- | -------------- | -------------- | ----- | ------ | ------ | ------ |
-| Tailwind                                             | <img src="https://img.shields.io/github/stars/tailwindlabs/tailwindcss">\n<img src="https://img.shields.io/npm/dm/tailwindcss?label=npm&color=white"> | —    | —              | 🚀             | 25%            | <big>75</big>% | 🟢    | _82%_  | _88%_  | _95%_  |
-| Bootstrap                                            | <img src="https://img.shields.io/github/stars/twbs/bootstrap">\n<img src="https://img.shields.io/npm/dm/bootstrap?label=npm&color=white">             | 🚀   | <big>52</big>% | <big>64</big>% | <big>82</big>% | 54%            | 🟠    | _48%_  | _35%_  | _20%_  |
+| Framework                                            | Stats                                                                                                                                                 | 2011 | 2016           | 2017           | 2020           | 2025           | 🚥  | _2026_ | _2030_ | _2040_ |
+| ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ---- | -------------- | -------------- | -------------- | -------------- | --- | ------ | ------ | ------ |
+| Tailwind                                             | <img src="https://img.shields.io/github/stars/tailwindlabs/tailwindcss">\n<img src="https://img.shields.io/npm/dm/tailwindcss?label=npm&color=white"> | —    | —              | 🚀             | 25%            | <big>75</big>% | 🟢  | _82%_  | _88%_  | _95%_  |
+| Bootstrap                                            | <img src="https://img.shields.io/github/stars/twbs/bootstrap">\n<img src="https://img.shields.io/npm/dm/bootstrap?label=npm&color=white">             | 🚀   | <big>52</big>% | <big>64</big>% | <big>82</big>% | 54%            | 🟠  | _48%_  | _35%_  | _20%_  |
 | **Semantic niche:**                                  |
-| Pico <sub>🥷 [Tricks ↗](https://blades.ninja/)</sub> | <img src="https://img.shields.io/github/stars/picocss/pico">\n<img src="https://img.shields.io/jsdelivr/npm/hm/@picocss/pico?color=white">            |
-| —                                                    | —                                                                                                                                                     | —    | 🚀             | 5%             | 🟢             | _7%_           | _12%_ | _18%_  |
+| Pico <sub>🥷 [Tricks ↗](https://blades.ninja/)</sub> | <img src="https://img.shields.io/github/stars/picocss/pico">\n<img src="https://img.shields.io/jsdelivr/npm/hm/@picocss/pico?color=white">            | —    | —              | —              | 🚀             | 5%             | 🟢  | _7%_   | _12%_  | _18%_  |
 | **Becoming legacy:**                                 |
-| Bulma                                                | <img src="https://img.shields.io/github/stars/jgthms/bulma">                                                                                          | —    | 🚀             | 12%            | 24%            | 9%             | 🔴    | _7%_   | _4%_   | —      |
-| Foundation                                           | <img src="https://img.shields.io/github/stars/foundation/foundation-sites">                                                                           | 🚀   | 24%            | 27%            | 21%            | 7%             | 🔴    | _6%_   | _3%_   | —      |
+| Bulma                                                | <img src="https://img.shields.io/github/stars/jgthms/bulma">                                                                                          | —    | 🚀             | 12%            | 24%            | 9%             | 🔴  | _7%_   | _4%_   | —      |
+| Foundation                                           | <img src="https://img.shields.io/github/stars/foundation/foundation-sites">                                                                           | 🚀   | 24%            | 27%            | 21%            | 7%             | 🔴  | _6%_   | _3%_   | —      |
 
 <small>Percentages represent developer adoption rates for each CSS framework. Percentages don't sum to 100% because developers often use multiple frameworks across different projects or simultaneously. Historical data (2011-2025) is based on developer surveys; future projections (2026-2040) are estimates based on current trends.</small>
 

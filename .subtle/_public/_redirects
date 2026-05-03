@@ -3,7 +3,7 @@
 /html/                /html/ 200
 
 # CSS => Docs
-/css/frameworks       /css-frameworks 301
+/css/frameworks/      /css/frameworks/ 200
 /css/*                /docs/:splat 301
 
 # 11ty subsite
