@@ -69,6 +69,7 @@
             | replace('/refs/heads/main/', '/') | replace('/refs/heads/master/', '/') %}
         {% endif %}
         {% for _section in item.sections | d([item.section]) %}
+          {% if _section == 'code' %}<h2>How it works</h2>{% endif %}
           {{ _path | fetch | section(_section) | markdownify | safe }}
         {% endfor %}
       {% endif %}

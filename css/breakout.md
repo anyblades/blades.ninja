@@ -12,11 +12,9 @@ title: <em>Br</em>eakout layout
 includes:
   - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/breakout.css
     sections: [docs, code]
-  - text: |-
+  - md: |-
       ---
-      ## Install <!-- same as https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md -->
-
-      ###### <mark>Via CDN</mark>
+      ## Standalone CDN version
 
       <!--prettier-ignore-->
       ```html
@@ -24,12 +22,6 @@ includes:
         https://cdn.jsdelivr.net/npm/@anyblades/blades@0/assets/breakout.min.css
       ">
       ```
-  - text: "###### <mark>Included with</mark>"
-  - teaser: /css/
-    no_toc: true
-  - text: "###### <mark>Included with</mark>"
-  - teaser: /css/pico/
-    no_toc: true
 
-revised: 2026-04-14
+revised: 2026-05-03
 ---
