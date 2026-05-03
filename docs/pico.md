@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
   parent: Get started
-  key: Pico ✨
+  key: <i class="fa-solid fa-circle-info"></i> About
   order: 10
 title: Pico+Blades CSS <i>✨🥷</i>
 # eleventyComputed:

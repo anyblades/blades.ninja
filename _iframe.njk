@@ -14,10 +14,13 @@ pagination:
 
 site:
   inline_styles:
-    - "main { display: flex; overflow: clip }"
+    - |-
+      main { display: flex; overflow: clip; padding: 0 !important }
+      iframe { width: 100%; margin: -160px auto 0 auto }
+      footer { display: none }
 ---
 
 <iframe
   src="{{ iframe.src }}"
-  style="width: 100%; max-width: 1023px; margin: -200px auto 0 auto"
+  style="{{ 'max-width: 1023px' if iframe.key != 'Examples' }}"
 ></iframe>
