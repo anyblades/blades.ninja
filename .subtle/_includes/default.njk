@@ -50,10 +50,16 @@
         {% if title %}<h1>{{ title | safe }}</h1>{% endif %}
         {% if description %}<p><big>{{ description }}</big></p>{% endif %}
         {{ content | safe }}
+        {% for item in includes %}
+          {% if item.path %}
+            {{ item.path | fetch | section(item.section) | markdownify | safe }}
+          {% endif %}
+        {% endfor %}
       </div>
     {% endif %}
   </main>
-  <footer class="container"><hr>
+  <footer class="container">
+    <hr style="margin-block-start: 0">
     <small><small>
       Code licensed <a href="https://github.com/anyblades/blades/blob/main/LICENSE.md">MIT</a>,
       docs <a href="https://github.com/anyblades/blades.ninja/blob/main/LICENSE.md">CC BY-SA 4.0</a>. &nbsp;

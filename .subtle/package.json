@@ -12,6 +12,7 @@
     "serve": "^14.2.5"
   },
   "dependencies": {
+    "@11ty/eleventy-fetch": "^5.1.2",
     "@anyblades/subtle": "^0.0.1"
   },
   "=== SITE GLOBALS": "===",
