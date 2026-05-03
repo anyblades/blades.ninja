@@ -6,6 +6,7 @@ eleventyNavigation:
 site:
   inline_styles:
     - |-
+      section { @media(min-width: 768px) { min-height: calc(100dvh - 150px) } }
       h1 mark {
         background: linear-gradient(to right, rgb(215.4, 140.8, 210.2), rgb(184.5, 153, 237.75), rgb(156.6, 165.3, 232.6), rgb(142.75, 168.95, 240.05));
         background-clip: text;
@@ -36,7 +37,7 @@ includes:
     section: info
 ---
 
-<section style="display: grid; place-items: center; min-height: calc(100dvh - 100px)">
+<section style="display: grid; place-items: center">
   <div style="text-align: center; text-wrap: balance">
 
 # <mark>Minimal CSS&nbsp;Framework</mark> <br> for Semantic&nbsp;HTML
@@ -52,3 +53,5 @@ Includes [Float labels](/docs/float-label/), [Breakout layout](/docs/breakout/) 
 
   </div>
 </section>
+
+---
