@@ -6,6 +6,10 @@
   parent: Get started
   key: CSS variables
   order: 2
+- src: https://picocss.com/examples
+  parent: Get started
+  key: Examples
+  order: 10
 
 - src: https://picocss.com/docs/container
   parent: Layout
