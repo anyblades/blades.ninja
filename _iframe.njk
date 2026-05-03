@@ -1,0 +1,15 @@
+---
+permalink: "docs/{{ iframe.src | split('/') | last }}/"
+eleventyComputed:
+  eleventyNavigation:
+    parent: "{{ iframe.parent }}"
+    key: "{{ iframe.key }}"
+
+pagination:
+  data: iframes
+  size: 1
+  alias: iframe
+  addAllPagesToCollections: true
+---
+
+<iframe src="{{ iframe.src }}"></iframe>

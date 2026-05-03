@@ -12,10 +12,11 @@
       display: flex; overflow: clip;
       > iframe { width: 100%; max-width: 1023px; margin: -200px auto 0 auto }
     }
-    h1 sup {
+    h1 sup, h2 sup {
       font-size: 13px; display: block;
-      letter-spacing: .0625em; text-transform: uppercase; color: #8b4f00;
+      letter-spacing: .0625em; text-transform: uppercase;
     }
+    h1 sup { color: #8b4f00 }
     a[role="button"] {
       text-align: start;
       border-width: 1px 0 0 1px;
@@ -46,9 +47,6 @@
     </nav>
   </header>
   <main>
-    {% if iframe %}
-      <iframe src="{{ iframe }}"></iframe>
-    {% else %}
       <div class="container breakout-all">
         {% if title %}
         <h1>
@@ -75,7 +73,6 @@
           {% endif %}
         {% endfor %}
       </div>
-    {% endif %}
   </main>
   <footer class="container">
     <hr style="margin-block-start: 0">

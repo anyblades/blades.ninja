@@ -23,7 +23,7 @@ site:
 
 includes:
   - tpl: |-
-      <h2>Documentation</h2>
+      <h2><sup>Documentation</sup></h2>
       <ul class="columns">
         {% for page in collections.all | eleventyNavigation %}
         <li>
@@ -36,7 +36,7 @@ includes:
     section: info
 ---
 
-<section style="display: grid; place-items: center; min-height: calc(100dvh - 150px)">
+<section style="display: grid; place-items: center; min-height: calc(100dvh - 100px)">
   <div style="text-align: center; text-wrap: balance">
 
 # <mark>Minimal CSS&nbsp;Framework</mark> <br> for Semantic&nbsp;HTML
