@@ -2,7 +2,7 @@
 permalink: /css/frameworks/
 eleventyNavigation:
   parent: Get started
-  key: <i class="fa-solid fa-circle-info"></i> Frameworks
+  key: Frameworks
   order: 11
 title: CSS Framework Trends <sub>2026-2040</sub>
 ---

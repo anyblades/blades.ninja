@@ -28,7 +28,7 @@ includes:
       <ul class="columns">
         {% for page in collections.all | eleventyNavigation %}
         <li>
-          <strong><a href="{{ page.url }}">{{ page.key }}</a></strong>
+          <strong><a href="{{ page.url }}">{{ page.key | safe }}</a></strong>
           {{ collections.all | eleventyNavigation(page.key) | eleventyNavigationToHtml | safe }}
         </li>
         {% endfor %}
