@@ -1,5 +1,7 @@
 ---
 permalink: /
+eleventyNavigation:
+  key: Docs
 site:
   inline_styles:
     - |-
@@ -19,19 +21,24 @@ site:
 #   hero: "<br>{{ summary | replace: 'hgroup>', 'h1>' | replace: '<wbr>', '<br>' }}<br>"
 
 includes:
-  - text: |-
-      ## [Documentation <i><small>→</small></i>](/css/)
-  - path: https://blades.ninja/css/
-    section: toc
-  - path: _why.md
+  - tpl: |-
+      <h2>Documentation</h2>
+      <ul class="columns">
+        {% for page in collections.all %}
+          {% if not page.data.eleventyNavigation.parent and page.data.eleventyNavigation.key %}
+          <li>
+            <strong><a href="{{ page.url }}">{{ page.data.eleventyNavigation.key }}</a></strong>
+            {{ collections.all | eleventyNavigation(page.data.eleventyNavigation.key) | eleventyNavigationToHtml | safe }}
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
   - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md
     section: info
-  # - path: README.md
-  #   section: tricks
 ---
 
-<section style="display: grid; place-items: center; min-height: calc(100dvh - 200px)">
-  <div style="text-align: center; text-wrap: balance"><br>
+<section style="display: grid; place-items: center; min-height: calc(100dvh - 150px)">
+  <div style="text-align: center; text-wrap: balance">
 
 # <mark>Minimal CSS&nbsp;Framework</mark> <br> for Semantic&nbsp;HTML
 

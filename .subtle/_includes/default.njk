@@ -51,7 +51,11 @@
         {% if description %}<p><big>{{ description }}</big></p>{% endif %}
         {{ content | safe }}
         {% for item in includes %}
-          {% if item.path %}
+          {% if item.md %}
+            {{ item.md | markdownify | safe }}
+          {% elif item.tpl %}
+            {{ item.tpl | renderContent('njk', { collections: collections }) | safe }}
+          {% elif item.path %}
             {% set _path = item.path %}
             {% if not site.prod and '/anyblades/' in _path %}
               {% set _path = _path
