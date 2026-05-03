@@ -2,7 +2,7 @@
 eleventyNavigation:
   parent: Forms
   key: Float labels <mark>NEW</mark>
-  order: 2
+  order: 7
 title: <em>Fl</em>oat label <small>CSS</small>
 # eleventyComputed:
 #   summary: |-
