@@ -11,12 +11,10 @@ title: '<em>L</em>ink <code style="padding: 0">i</code>con'
 
 includes:
   - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/link-icon.css
-    section: docs,code
-  - text: |-
+    sections: [docs, code]
+  - md: |-
       ---
-      ## Install <!-- same as https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md -->
-
-      ###### <mark>Via CDN</mark>
+      ## Standalone CDN version
 
       <!--prettier-ignore-->
       ```html
@@ -24,12 +22,6 @@ includes:
         https://cdn.jsdelivr.net/npm/@anyblades/blades@0/assets/link-icon.min.css
       ">
       ```
-  - text: "###### <mark>Included with</mark>"
-  - teaser: /css/
-    no_toc: true
-  - text: "###### <mark>Included with</mark>"
-  - teaser: /css/pico/
-    no_toc: true
 
-revised: 2026-04-14
+revised: 2026-05-03
 ---
