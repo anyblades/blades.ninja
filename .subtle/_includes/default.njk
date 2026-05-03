@@ -31,11 +31,14 @@
       {#TODO: add "Nav brand" helper #}
       <big><a href="/">🥷 <em>Bl</em>ades</a></big>
       <ul>
-        {% for _parent in ['Docs', 'Layout', 'Content', 'Forms'] %}
-        <li><details class="dropdown"><summary role="link">{{ _parent }}</summary>
-          {{ collections.all | eleventyNavigation(_parent) | eleventyNavigationToHtml | safe }}
-        </details></li>
-        {% endfor %}
+        {% for page in collections.all %}{% if not page.data.eleventyNavigation.parent and page.data.eleventyNavigation.key %}
+        <li>
+          <details class="dropdown">
+            <summary role="link">{{ page.data.eleventyNavigation.key }}</summary>
+            {{ collections.all | eleventyNavigation(page.data.eleventyNavigation.key) | eleventyNavigationToHtml | safe }}
+          </details>
+        </li>
+        {% endif %}{% endfor %}
         <li class="faded opt">|</li>
         <li><a href="https://github.com/anyblades/blades"><i class="fa-brands fa-github fa-lg"></i></a></li>
         <li><a href="https://x.com/any_blades"><i class="fa-brands fa-x-twitter fa-lg"></i></a></li>
