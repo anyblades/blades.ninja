@@ -1,5 +1,5 @@
 ---
-permalink: "docs/{{ iframe.src | split('/') | last }}/"
+permalink: "{{ iframe.src | replace('https://picocss.com/', '/') | replace('/docs/', '/css/') | replace('/css/css-', '/css/') }}/"
 eleventyComputed:
   eleventyNavigation:
     parent: "{{ iframe.parent }}"

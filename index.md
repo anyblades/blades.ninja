@@ -44,11 +44,11 @@ includes:
 
 Fully compatible and actively maintained successor to Pico CSS.
 
-Includes [Float labels](/docs/float-label/), [Breakout layout](/docs/breakout/) and other modern helpers. Simply switch `pico.css` to `blades.css`, or add `blades.standalone.css` to other frameworks.
+Includes [Float labels](/css/float-label/), [Breakout layout](/css/breakout/) and other modern helpers. Simply switch `pico.css` to `blades.css`, or add `blades.standalone.css` to other frameworks.
 
 <br>
 
-[Get Started &nbsp;›](/docs/){role=button} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[Get Started &nbsp;›](/css/){role=button} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Examples &nbsp;›](/examples/){role=button .contrast}
 
   </div>

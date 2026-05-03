@@ -9,7 +9,6 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "./.subtle/_public/": "." });
   eleventyConfig.addPassthroughCopy("../**/*.png");
   eleventyConfig.addGlobalData("site", pkg.site);
-  eleventyConfig.addFilter("split", (str, sep) => str.split(sep));
 
   //TODO: move to 11ty-blades?
   for (const line of readFileSync("./.gitignore", "utf8").split("\n"))
