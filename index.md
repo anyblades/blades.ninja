@@ -1,7 +1,8 @@
 ---
 permalink: /
 eleventyNavigation:
-  key: Docs
+  key: Get started
+  order: 0
 site:
   inline_styles:
     - |-
@@ -24,12 +25,12 @@ includes:
   - tpl: |-
       <h2>Documentation</h2>
       <ul class="columns">
-        {% for page in collections.all %}{% if not page.data.eleventyNavigation.parent and page.data.eleventyNavigation.key %}
+        {% for page in collections.all | eleventyNavigation %}
         <li>
-          <strong><a href="{{ page.url }}">{{ page.data.eleventyNavigation.key }}</a></strong>
-          {{ collections.all | eleventyNavigation(page.data.eleventyNavigation.key) | eleventyNavigationToHtml | safe }}
+          <strong><a href="{{ page.url }}">{{ page.key }}</a></strong>
+          {{ collections.all | eleventyNavigation(page.key) | eleventyNavigationToHtml | safe }}
         </li>
-        {% endif %}{% endfor %}
+        {% endfor %}
       </ul>
   - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md
     section: info

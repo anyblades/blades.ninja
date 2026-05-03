@@ -31,14 +31,14 @@
       {#TODO: add "Nav brand" helper #}
       <big><a href="/">🥷 <em>Bl</em>ades</a></big>
       <ul>
-        {% for page in collections.all %}{% if not page.data.eleventyNavigation.parent and page.data.eleventyNavigation.key %}
+        {% for page in collections.all | eleventyNavigation %}
         <li>
           <details class="dropdown">
-            <summary role="link">{{ page.data.eleventyNavigation.key }}</summary>
-            {{ collections.all | eleventyNavigation(page.data.eleventyNavigation.key) | eleventyNavigationToHtml | safe }}
+            <summary role="link">{{ page.key }}</summary>
+            {{ collections.all | eleventyNavigation(page.key) | eleventyNavigationToHtml | safe }}
           </details>
         </li>
-        {% endif %}{% endfor %}
+        {% endfor %}
         <li class="faded opt">|</li>
         <li><a href="https://github.com/anyblades/blades"><i class="fa-brands fa-github fa-lg"></i></a></li>
         <li><a href="https://x.com/any_blades"><i class="fa-brands fa-x-twitter fa-lg"></i></a></li>
@@ -50,9 +50,15 @@
       <iframe src="{{ iframe }}"></iframe>
     {% else %}
       <div class="container breakout-all">
-        {% if title %}<h1>{{ title | safe }}</h1>{% endif %}
+        {% if title %}
+        <h1>
+          {% if eleventyNavigation.parent %}<sup>{{ eleventyNavigation.parent }}</sup>{% endif %}
+          {{ title | safe }}
+        </h1>
+        {% endif %}
         {% if description %}<p><big>{{ description }}</big></p>{% endif %}
         {{ content | safe }}
+
         {% for item in includes %}
           {% if item.md %}
             {{ item.md | markdownify | safe }}

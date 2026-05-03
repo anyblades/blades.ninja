@@ -1,6 +1,6 @@
 ---
 eleventyNavigation:
-  parent: Docs
+  parent: Get started
   key: Frameworks
   order: 11
 title: CSS Framework Trends <sub>2026-2040</sub>
