@@ -3,6 +3,7 @@ permalink: /
 eleventyNavigation:
   key: Get started
   order: 0
+title: ""
 site:
   inline_styles:
     - |-

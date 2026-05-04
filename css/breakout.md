@@ -1,9 +1,8 @@
 ---
 eleventyNavigation:
   parent: Layout
-  key: Breakout <mark>NEW</mark>
-  order: 5
-title: <em>Br</em>eakout layout
+  key: <em>Br</em>eakout container <mark>NEW</mark>
+  order: 1
 # eleventyComputed:
 #   summary: |-
 #     {{ 'https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/breakout.css'

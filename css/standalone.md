@@ -3,7 +3,10 @@ eleventyNavigation:
   parent: Get started
   key: Standalone version <mark>NEW</mark>
   order: 3
-title: Standalone version
+
+includes:
+  - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/blades.theme.css
+    section: code
 ---
 
 <big>*Bl*ades does not replace other frameworks, but empowers them instead:</big>
@@ -22,3 +25,7 @@ title: Standalone version
 | Float labels:                      | ❌                                                                                               | ✅ [Docs](/css/float-label/)                                                          | ✅                                                                                                                | ❌                                                                          | ✅                                                                                  | ✅                                                                            |
 
 {.striped}
+
+---
+
+## Theme

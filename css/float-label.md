@@ -1,9 +1,8 @@
 ---
 eleventyNavigation:
   parent: Forms
-  key: Float labels <mark>NEW</mark>
+  key: <em>Fl</em>oat labels <mark>NEW</mark>
   order: 7
-title: <em>Fl</em>oat labels
 # eleventyComputed:
 #   summary: |-
 #     {{ 'https://raw.githubusercontent.com/anyblades/float-label-css/refs/heads/master/README.md'

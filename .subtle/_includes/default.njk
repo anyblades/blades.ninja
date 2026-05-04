@@ -52,10 +52,10 @@
     </nav>
   </header>
   <main class="{{ 'container breakout-all' if not iframe }}">
-    {% if title %}
+    {% if title or eleventyNavigation %}
     <h1>
       {% if eleventyNavigation.parent %}<sup>{{ eleventyNavigation.parent }}</sup>{% endif %}
-      {{ title | safe }}
+      {{ title | d(eleventyNavigation.key | remove_tag('mark')) | safe }}
     </h1>
     {% endif %}
     {% if description %}<p><big>{{ description }}</big></p>{% endif %}
@@ -74,7 +74,7 @@
             | replace('/refs/heads/main/', '/') | replace('/refs/heads/master/', '/') %}
         {% endif %}
         {% for _section in item.sections | d([item.section]) %}
-          {% if _section == 'code' %}<h2>How it works</h2>{% endif %}
+          {% if _section == 'code' %}<h3>How it works</h3>{% endif %}
           {{ _path | fetch | section(_section) | markdownify | safe }}
         {% endfor %}
       {% endif %}

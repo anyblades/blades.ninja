@@ -3,7 +3,6 @@ permalink: /html/
 eleventyNavigation:
   key: Templates <mark>NEW</mark>
   order: 5
-title: <em>Bl</em>ades <small>HTML</small>
 summary: Generic Nunjucks/Liquid templates for 11ty/Build Awesome, Jekyll, Shopify, etc.
 
 includes:

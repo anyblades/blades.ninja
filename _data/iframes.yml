@@ -18,15 +18,15 @@
 - src: https://picocss.com/docs/landmarks-section
   parent: Layout
   key: Landmarks & section
-  order: 1
+  order: 2
 - src: https://picocss.com/docs/grid
   parent: Layout
   key: Grid
-  order: 2
+  order: 3
 - src: https://picocss.com/docs/overflow-auto
   parent: Layout
   key: Overflow auto
-  order: 3
+  order: 5
 
 - src: https://picocss.com/docs/typography
   parent: Content
