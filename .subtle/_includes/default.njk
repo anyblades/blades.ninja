@@ -58,7 +58,7 @@
     {% if title or eleventyNavigation %}
     <h1>
       {% if eleventyNavigation.parent %}<sup>{{ eleventyNavigation.parent }}</sup>{% endif %}
-      {{ (title or eleventyNavigation.key | remove_tag('mark')) | safe }}
+      {{ title | d(eleventyNavigation.key | remove_tag('mark')) | safe }}
     </h1>
     {% endif %}
     {% if description %}<p><big>{{ description }}</big></p>{% endif %}
