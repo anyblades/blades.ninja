@@ -79,6 +79,10 @@
         {% endfor %}
       {% endif %}
     {% endfor %}
+
+    {% if page.url != '/' %}
+      {{ collections.all | eleventyNavigation(eleventyNavigation.key) | eleventyNavigationToHtml | safe }}
+    {% endif %}
   </main>
   <footer class="container">
     <hr style="margin-block-start: 0">
