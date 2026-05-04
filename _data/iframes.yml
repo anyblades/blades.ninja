@@ -32,7 +32,7 @@
 - src: https://picocss.com/docs/typography
   parent: Content
   key: Typography
-  order: 0
+  order: -1
 - src: https://picocss.com/docs/link
   parent: Content
   key: Link
