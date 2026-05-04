@@ -78,7 +78,7 @@
         {% endif %}
         {% for _section in item.sections | d([item.section]) %}
           {% if _section == 'code' %}<h3>How it works</h3>{% endif %}
-          {{ _path | fetch | section(_section) | markdownify | safe }}
+          {{ _path | fetch | section(_section) | replace('/*```', '```') | markdownify | safe }}
         {% endfor %}
       {% endif %}
     {% endfor %}
