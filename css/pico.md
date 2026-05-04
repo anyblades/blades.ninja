@@ -12,9 +12,7 @@ title: Pico+Blades CSS <i>✨🥷</i>
 includes:
   - path: https://raw.githubusercontent.com/anyblades/pico/refs/heads/main/README.md
     section: docs
-  - text: |-
+  - md: |-
       ---
       See also:
-  - teaser: /css/
-    no_toc: true
 ---

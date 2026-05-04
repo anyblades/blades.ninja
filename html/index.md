@@ -11,20 +11,20 @@ includes:
       ---
       ## Base HTML {#base}
   - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/_includes/blades/html.njk
-    section: docs,code
+    sections: [docs, code]
   - text: <div><hr></div>
   - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/_includes/blades/html.liquid
-    section: docs,code
+    sections: [docs, code]
   - text: |-
       ---
       ## Links
   - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/_includes/blades/links.liquid
-    section: docs,code
+    sections: [docs, code]
   - text: |-
       ---
       ## Sitemap
   - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/_includes/blades/sitemap.xml.njk
-    section: docs,code
+    sections: [docs, code]
   - text: |-
       ---
       ## More
