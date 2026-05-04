@@ -7,12 +7,6 @@
 includes:
   - text: |-
       ---
-      ## Layout
-  - teaser: /css/breakout/
-  - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/_layout.css
-    section: docs
-  - text: |-
-      ---
       ## Content
   - teaser: /css/link-icon/
   - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/content/_typography.css

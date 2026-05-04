@@ -51,11 +51,14 @@
       </ul>
     </nav>
   </header>
-  <main class="{{ 'container breakout-all' if not iframe }}">
+  {% if iframe %}
+    <main>{{ content | safe }}</main>
+  {% else %}
+  <main class="container breakout-all">
     {% if title or eleventyNavigation %}
     <h1>
       {% if eleventyNavigation.parent %}<sup>{{ eleventyNavigation.parent }}</sup>{% endif %}
-      {{ title | d(eleventyNavigation.key | remove_tag('mark')) | safe }}
+      {{ (title or eleventyNavigation.key | remove_tag('mark')) | safe }}
     </h1>
     {% endif %}
     {% if description %}<p><big>{{ description }}</big></p>{% endif %}
@@ -84,6 +87,7 @@
       {{ collections.all | eleventyNavigation(eleventyNavigation.key) | eleventyNavigationToHtml | safe }}
     {% endif %}
   </main>
+  {% endif %}
   <footer class="container">
     <hr style="margin-block-start: 0">
     <small><small>
