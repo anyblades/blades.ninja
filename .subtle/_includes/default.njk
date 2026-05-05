@@ -1,3 +1,4 @@
+{% if not title and title != false %}{% set title = eleventyNavigation.key | remove_tag('mark') %}{% endif %}
 {% extends 'blades/html.njk' %}
 
 {% set content_for_header %}
@@ -58,7 +59,7 @@
     {% if title != false %}
     <h1>
       {% if eleventyNavigation.parent %}<sup>{{ eleventyNavigation.parent | safe }}</sup>{% endif %}
-      {{ title | d(eleventyNavigation.key | remove_tag('mark')) | safe }}
+      {{ title | safe }}
     </h1>
     {% endif %}
     {% if description %}<p><big>{{ description }}</big></p>{% endif %}
