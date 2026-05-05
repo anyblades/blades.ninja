@@ -14,7 +14,7 @@ site:
         color: transparent;
       }
       .fa-tailwind-css  { color: deepskyblue }
-      .fa-bootstrap     { color: mediumslateblue }
+      .fa-bootstrap     { color: blueviolet }
       /*TODO: fix in blades.css */
       a[role=button] {
         display: inline-flex;
@@ -54,9 +54,10 @@ Includes [Float labels](/css/float-label/), [Breakout layout](/css/breakout/) an
 
 <nav style="justify-content: center; gap: 1rem">
 
-[Get Started ✨](/css/){role=button} <br><sub>just like Pico CSS</sub>
+[Get Started](/css/){role=button} <br><sub>Pico CSS ✨</sub>
 
-[Use Standalone <i><i class="fa-brands fa-tailwind-css"></i><i class="fa-brands fa-bootstrap"></i></i>](/css/standalone/){role=button .contrast} <br><sub>with other frameworks</sub>
+[Use Standalone](/css/standalone/){role=button .contrast} <br><sub>other frameworks
+<i class="fa-brands fa-tailwind-css"></i><i class="fa-brands fa-bootstrap"></i></sub>
 
 </nav>
 
