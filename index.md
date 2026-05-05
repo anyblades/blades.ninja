@@ -1,53 +1,67 @@
 ---
 permalink: /
+eleventyNavigation:
+  key: Get started
+  order: 0
+title: false
 site:
   inline_styles:
     - |-
-      h1 {
-        margin-block-start: 0;
-        @media (max-width: 767px) { font-size: 1.75em }
+      section { @media(min-width: 768px) { min-height: calc(100dvh - 150px) } }
+      h1 mark {
+        background: linear-gradient(to right, rgb(215.4, 140.8, 210.2), rgb(184.5, 153, 237.75), rgb(156.6, 165.3, 232.6), rgb(142.75, 168.95, 240.05));
+        background-clip: text;
+        color: transparent;
       }
-
-      th, td {
-        padding-inline: 1rem !important;
-        min-width: 10ch;
-        &:first-child { text-align: right; border-right: 2px dotted silver }
-        &:not(:first-child) { width: 16% }
-      }
-      th { font-size: larger }
-      td big { font-weight: bold }
-
       .fa-tailwind-css  { color: deepskyblue }
       .fa-bootstrap     { color: blueviolet }
-
-      #showcase + article {
-        padding-inline: 1.5rem;
-        p {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 0.5rem 1.5rem;
-          margin: 0;
-          font-size: 125%;
-          @media (min-width: 768px) { justify-content: center }
-        }
-        a { overflow: visible }
+      /*TODO: fix in blades.css */
+      a[role=button] {
+        display: inline-flex;
       }
-eleventyComputed:
-  #TODO: add to tricks
-  summary: |-
-    {{ 'https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md'
-     | if: site.prod | default: '../../blades/README.md' | fetch | section: 'summary' | markdownify }}
-  site.title: "{{ site.title }} | {{ summary | split: '</hgroup>' | first | strip_html }}"
-  hero: "<br>{{ summary | replace: 'hgroup>', 'h1>' | replace: '<wbr>', '<br>' }}<br>"
+# eleventyComputed:
+#   #TODO: add to tricks
+#   summary: |-
+#     {{ 'https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md'
+#      | if: site.prod | default: '../../blades/README.md' | fetch | section: 'summary' | markdownify }}
+#   site.title: "{{ site.title }} | {{ summary | split: '</hgroup>' | first | strip_html }}"
+#   hero: "<br>{{ summary | replace: 'hgroup>', 'h1>' | replace: '<wbr>', '<br>' }}<br>"
 
-includes:
-  - text: |-
-      ## [Documentation <i><small>→</small></i>](/css/)
-  - path: https://blades.ninja/css/
-    section: toc
-  - path: _why.md
+bricks:
+  - tpl: |-
+      <h2><sup>Documentation</sup></h2>
+      <ul class="columns">
+        {% for page in collections.all | eleventyNavigation %}
+        <li>
+          <strong><a href="{{ page.url }}">{{ page.key | safe }}</a></strong>
+          {{ collections.all | eleventyNavigation(page.key) | eleventyNavigationToHtml | safe }}
+        </li>
+        {% endfor %}
+      </ul>
+      <hr>
   - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md
     section: info
-  # - path: README.md
-  #   section: tricks
+---
+
+<section style="display: grid; place-items: center">
+<div style="text-align: center; text-wrap: balance">
+
+# <mark>Minimal CSS&nbsp;Framework</mark> <br> for Semantic&nbsp;HTML
+
+Fully compatible and actively maintained successor to Pico CSS.
+
+Includes [Float labels](/css/float-label/), [Breakout layout](/css/breakout/) and other modern helpers. Simply switch `pico.css` to `blades.css`, or add `blades.standalone.css` to other frameworks.
+
+<nav style="justify-content: center; gap: 1rem">
+
+[Get Started](/css/){role=button} <br><sub>Pico CSS ✨</sub>
+
+[Use Standalone](/css/standalone/){role=button .contrast} <br><sub>other frameworks
+<i class="fa-brands fa-tailwind-css"></i><i class="fa-brands fa-bootstrap"></i></sub>
+
+</nav>
+
+</div>
+</section>
+
 ---

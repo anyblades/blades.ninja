@@ -1,19 +1,18 @@
 ---
 eleventyNavigation:
-  key: <i>✨</i>
-  order: 2
+  parent: Get started
+  key: Pico CSS ✨
+  order: 4
 title: Pico+Blades CSS <i>✨🥷</i>
-eleventyComputed:
-  summary: |-
-    {{ 'https://raw.githubusercontent.com/anyblades/pico/refs/heads/main/README.md'
-     | if: site.prod | default: '../../pico/README.md' | fetch | section: 'summary' | markdownify }}
+# eleventyComputed:
+#   summary: |-
+#     {{ 'https://raw.githubusercontent.com/anyblades/pico/refs/heads/main/README.md'
+#      | if: site.prod | default: '../../pico/README.md' | fetch | section: 'summary' | markdownify }}
 
-includes:
+bricks:
   - path: https://raw.githubusercontent.com/anyblades/pico/refs/heads/main/README.md
     section: docs
-  - text: |-
+  - md: |-
       ---
       See also:
-  - teaser: /css/
-    no_toc: true
 ---

@@ -1,11 +1,20 @@
-## Why *Bl*ades? {#why}
+---
+eleventyNavigation:
+  parent: Get started
+  key: <em>St</em>andalone version <mark>NEW</mark>
+  order: 3
+
+bricks:
+  - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/blades.theme.css
+    section: code
+---
 
 <big>*Bl*ades does not replace other frameworks, but empowers them instead:</big>
 
 |                                    | [<i class="fa-brands fa-tailwind-css"></i> Tailwind](https://tailwindcss-typography.vercel.app/) | [<span>*Bl*ades</span> <i>🥷</i>](https://blades.ninja/css/)                          | [<i class="fa-brands fa-tailwind-css"></i> <span>Tailwind+*Bl*ades</span> <i>🥷</i>](https://build.blades.ninja/) | [<i>✨</i> Pico](https://picocss.com/)                                      | [<i>✨</i> <span>Pico+*Bl*ades</span> <i>🥷</i>](https://blades.ninja/css/pico/)    | [<i class="fa-brands fa-bootstrap"></i> Bootstrap](https://getbootstrap.com/) |
 | ---------------------------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
 | Type:                              | Utility-first                                                                                    | Class-light                                                                           | Hybrid                                                                                                            | Class-light                                                                 | Class-light                                                                         | Component-based                                                               |
-| Written in:                           | [<i class="fa-brands fa-github"></i> JavaScript](https://github.com/tailwindlabs/tailwindcss)    | [<i class="fa-brands fa-github"></i> Modern CSS](https://github.com/anyblades/blades) | [<i class="fa-brands fa-github"></i> Hybrid](https://github.com/anyblades/build-awesome-starter)                  | [<i class="fa-brands fa-github"></i> SCSS](https://github.com/picocss/pico) | [<i class="fa-brands fa-github"></i> Modern CSS](https://github.com/anyblades/pico) | [<i class="fa-brands fa-github"></i> SCSS](https://github.com/twbs/bootstrap) |
+| Written in:                        | [<i class="fa-brands fa-github"></i> JavaScript](https://github.com/tailwindlabs/tailwindcss)    | [<i class="fa-brands fa-github"></i> Modern CSS](https://github.com/anyblades/blades) | [<i class="fa-brands fa-github"></i> Hybrid](https://github.com/anyblades/build-awesome-starter)                  | [<i class="fa-brands fa-github"></i> SCSS](https://github.com/picocss/pico) | [<i class="fa-brands fa-github"></i> Modern CSS](https://github.com/anyblades/pico) | [<i class="fa-brands fa-github"></i> SCSS](https://github.com/twbs/bootstrap) |
 | CSS base:                          | `modern-normalize` <br> `preflight`                                                              | ⇢ Inherited                                                                           | `modern-normalize` <br> `preflight`                                                                               | `normalize` <br> `sanitize`                                                 | `normalize` <br> `sanitize`                                                         | `normalize` <br> `reboot`                                                     |
 | <big>Layout:</big>                 | ☑️ CSS primitives                                                                                | ⇢ Inherited                                                                           | ☑️ CSS primitives                                                                                                 | ☑️ Basic grid                                                               | ☑️ Basic grid                                                                       | ✅                                                                            |
 | Text columns:                      | ☑️ CSS primitives                                                                                | ✅ [Docs](/css/#auto-columns)                                                         | ✅                                                                                                                | ❌                                                                          | ✅                                                                                  | ❌                                                                            |
@@ -16,3 +25,7 @@
 | Float labels:                      | ❌                                                                                               | ✅ [Docs](/css/float-label/)                                                          | ✅                                                                                                                | ❌                                                                          | ✅                                                                                  | ✅                                                                            |
 
 {.striped}
+
+---
+
+## Theme

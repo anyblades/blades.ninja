@@ -1,46 +1,106 @@
+{% if not title and title != false %}{% set title = eleventyNavigation.key | remove_tag('mark') %}{% endif %}
 {% extends 'blades/html.njk' %}
 
-{% set site = site | merge({
-  'styles': [
-    'https://cdn.jsdelivr.net/npm/@anyblades/blades@0/assets/pico.blades.min.css',
-    'https://cdn.jsdelivr.net/npm/prismjs@1/themes/prism-tomorrow.min.css'
-  ],
-  'scripts': [
-    'https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-core.min.js',
-    'https://cdn.jsdelivr.net/npm/prismjs@1/plugins/autoloader/prism-autoloader.min.js'
-  ]
-}) %}
-
 {% set content_for_header %}
-  <link rel="canonical" href="https://blades.ninja/build-awesome-11ty/starters/" />
+  <link rel="canonical" href="https://11ty.blades.ninja/starters/" />
   <style>
-    body > :is(header, footer) {
-      padding-block: 2rem;
-      text-align: center;
+    header nav {
+      --pico-primary: var(--pico-contrast);
+      align-items: center;
+      big a { text-decoration: none; font-weight: bold; font-size: larger; }
     }
-    a[role="button"] {
+    :is(h1, h2) sup {
+      font-size: 13px; display: block;
+      letter-spacing: .0625em; text-transform: uppercase;
+    }
+    h1 sup { color: #8b4f00 }
+    h1 sub {
+      display: block; font-size: 50%; line-height: 1.1;
+      bottom: 0; /* vertical-align: top; */
+      font-weight: 300; opacity: 75%;
+    }
+    :is(a, summary) mark {
+      font-size: 12px; vertical-align: text-bottom;
+      font-weight: 600; border-radius: .125rem;
+    }
+    /* a[role="button"] {
       text-align: start;
       border-width: 1px 0 0 1px;
       margin: 0 0 0.5rem -1rem;
-    }
-    /*TODO: move to blades-css */
-    .breakout-all > img {
-      min-width: auto !important;
-    }
-    .opt { @media screen and (max-width: 767px) { display: none } }
-    .borderless th { padding-inline-start: 2rem !important }
+    } */
+    .opt { @media(max-width: 767px) { display: none } }
   </style>
 {% endset %}
 
 {% block body %}
-  <header>
-    <a href="/">Home</a> &nbsp;
-    <a href="/blog/">Blog</a>
+  <header class="container">
+    <nav>
+      {#TODO: add "Nav brand" helper #}
+      <big><a href="/">🥷 <em>Bl</em>ades</a></big>
+      <ul>
+        {% for page in collections.all | eleventyNavigation %}
+        <li>
+          <details class="dropdown">
+            <summary role="link">{{ page.key | safe }}</summary>
+            {{ collections.all | eleventyNavigation(page.key) | eleventyNavigationToHtml | safe }}
+          </details>
+        </li>
+        {% endfor %}
+        <li class="faded opt">|</li>
+        <li><a href="https://github.com/anyblades/blades"><i class="fa-brands fa-github fa-lg"></i></a></li>
+        <li><a href="https://x.com/any_blades"><i class="fa-brands fa-x-twitter fa-lg"></i></a></li>
+      </ul>
+    </nav>
   </header>
+  {% if iframe %}
+    <main>{{ content | safe }}</main>
+  {% else %}
   <main class="container breakout-all">
-    <h1>{{ title }}</h1>
-    <p><big>{{ description }}</big></p>
+    {% if title != false %}
+    <h1>
+      {% if eleventyNavigation.parent %}<sup>{{ eleventyNavigation.parent | safe }}</sup>{% endif %}
+      {{ title | safe }}
+    </h1>
+    {% endif %}
+    {% if description %}<p><big>{{ description }}</big></p>{% endif %}
     {{ content | safe }}
+
+    {% for brick in bricks %}
+      {% if brick.md %}
+        {{ brick.md | markdownify | safe }}
+      {% elif brick.tpl %}
+        {{ brick.tpl | renderContent('njk', { collections: collections }) | safe }}
+      {% elif brick.path %}
+        {% set _path = brick.path %}
+        {% if not site.prod and '/anyblades/' in _path %}
+          {% set _path = _path
+            | replace('https://raw.githubusercontent.com/anyblades/', '../')
+            | replace('/refs/heads/main/', '/') | replace('/refs/heads/master/', '/') %}
+        {% endif %}
+        {% set _fetched = _path | fetch %}
+        {% if brick.section or brick.sections %}
+          {% for _section in brick.sections | d([brick.section]) %}
+            {% if _section == 'code' %}<h3>How it works</h3>{% endif %}
+            {{ _fetched | section(_section) | replace('/*```', '```') | markdownify | safe }}
+          {% endfor %}
+        {% else %}
+          {{ _fetched | markdownify | safe }}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {% if page.url != '/' %}
+      {{ collections.all | eleventyNavigation(eleventyNavigation.key) | eleventyNavigationToHtml | safe }}
+    {% endif %}
   </main>
-  <footer><hr>Footer</footer>
+  {% endif %}
+  <footer class="container">
+    <hr style="margin-block-start: 0">
+    <small><small>
+      Code licensed <a href="https://github.com/anyblades/blades/blob/main/LICENSE.md">MIT</a>,
+      docs <a href="https://github.com/anyblades/blades.ninja/blob/main/LICENSE.md">CC BY-SA 4.0</a>. &nbsp;
+      Currently <img src="https://img.shields.io/github/v/release/anyblades/blades?label=&color=white">
+    </small></small>
+    <br><br>
+  </footer>
 {% endblock %}
