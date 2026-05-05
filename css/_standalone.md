@@ -1,14 +1,3 @@
----
-eleventyNavigation:
-  parent: Get started
-  key: <em>St</em>andalone version <mark>NEW</mark>
-  order: 3
-
-bricks:
-  - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/blades.standalone.theme.css
-    section: code
----
-
 <big>*Bl*ades does not replace other frameworks, but empowers them instead:</big>
 
 |                                    | [<i class="fa-brands fa-tailwind-css"></i> Tailwind](https://tailwindcss-typography.vercel.app/) | [<span>*Bl*ades</span> <i>🥷</i>](https://blades.ninja/css/)                          | [<i class="fa-brands fa-tailwind-css"></i> <span>Tailwind+*Bl*ades</span> <i>🥷</i>](https://build.blades.ninja/) | [<i>✨</i> Pico](https://picocss.com/)                                      | [<i>✨</i> <span>Pico+*Bl*ades</span> <i>🥷</i>](https://blades.ninja/css/pico/)    | [<i class="fa-brands fa-bootstrap"></i> Bootstrap](https://getbootstrap.com/) |
@@ -25,7 +14,3 @@ bricks:
 | Float labels:                      | ❌                                                                                               | ✅ [Docs](/css/float-label/)                                                          | ✅                                                                                                                | ❌                                                                          | ✅                                                                                  | ✅                                                                            |
 
 {.striped}
-
----
-
-## Theme
