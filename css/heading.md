@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
   parent: Content
-  key: Heading anchor <mark>NEW</mark>
+  key: <em>H</em>eading helpers <mark>NEW</mark>
   order: 0
 
 includes:

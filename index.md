@@ -3,7 +3,7 @@ permalink: /
 eleventyNavigation:
   key: Get started
   order: 0
-title: ""
+title: false
 site:
   inline_styles:
     - |-
@@ -14,7 +14,11 @@ site:
         color: transparent;
       }
       .fa-tailwind-css  { color: deepskyblue }
-      .fa-bootstrap     { color: blueviolet }
+      .fa-bootstrap     { color: mediumslateblue }
+      /*TODO: fix in blades.css */
+      a[role=button] {
+        display: inline-flex;
+      }
 # eleventyComputed:
 #   #TODO: add to tricks
 #   summary: |-
@@ -40,7 +44,7 @@ includes:
 ---
 
 <section style="display: grid; place-items: center">
-  <div style="text-align: center; text-wrap: balance">
+<div style="text-align: center; text-wrap: balance">
 
 # <mark>Minimal CSS&nbsp;Framework</mark> <br> for Semantic&nbsp;HTML
 
@@ -48,12 +52,15 @@ Fully compatible and actively maintained successor to Pico CSS.
 
 Includes [Float labels](/css/float-label/), [Breakout layout](/css/breakout/) and other modern helpers. Simply switch `pico.css` to `blades.css`, or add `blades.standalone.css` to other frameworks.
 
-<br>
+<nav style="justify-content: center; gap: 1rem">
 
-[Get Started &nbsp;›](/css/){role=button} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Examples &nbsp;›](/examples/){role=button .contrast}
+[Get Started ✨](/css/){role=button} <br><sub>just like Pico CSS</sub>
 
-  </div>
+[Use Standalone <i><i class="fa-brands fa-tailwind-css"></i><i class="fa-brands fa-bootstrap"></i></i>](/css/standalone/){role=button .contrast} <br><sub>with other frameworks</sub>
+
+</nav>
+
+</div>
 </section>
 
 ---
