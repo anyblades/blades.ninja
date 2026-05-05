@@ -5,7 +5,7 @@ eleventyNavigation:
   order: 3
 
 bricks:
-  - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/blades.theme.css
+  - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/blades.standalone.theme.css
     section: code
 ---
 
