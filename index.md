@@ -52,11 +52,12 @@ Fully compatible and actively maintained successor to Pico CSS.
 
 Includes [Float labels](/css/float-label/), [Breakout layout](/css/breakout/) and other modern helpers. Simply switch `pico.css` to `blades.css`, or add `blades.standalone.css` to other frameworks.
 
+<br>
 <nav style="justify-content: center; gap: 1rem">
 
-[Get Started](/css/){role=button} <br><sub>Pico CSS ✨</sub>
+[Get Started &nbsp;›](/css/){role=button} <br><sub>Pico CSS ✨</sub>
 
-[Use Standalone](/css/standalone/){role=button .contrast} <br><sub>other frameworks
+[Use Standalone &nbsp;›](/css/standalone/){role=button .contrast} <br><sub>other frameworks
 <i class="fa-brands fa-tailwind-css"></i><i class="fa-brands fa-bootstrap"></i></sub>
 
 </nav>
