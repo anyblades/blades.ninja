@@ -1,0 +1,43 @@
+---
+permalink: /
+eleventyNavigation:
+  key: Get started
+  order: 0
+eleventyComputed:
+  #TODO: add to tricks
+  title: "{{ site.title}} • {{ description | split('</hgroup>') | first | striptags }}"
+  description: |-
+    {{ 'https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md' if site.prod else '../blades/README.md'
+      | fetch | section('summary') | replace('hgroup>', 'h1>') | markdownify | safe }}
+
+bricks:
+  - md: ---
+  - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md
+    section: info
+---
+
+<section class="hero">
+  {{ description | safe }}
+
+  <nav>
+    <p>
+      <a href="/css/" role="button">Get Started &nbsp;›</a><br>
+      <sub>Pico CSS ✨</sub>
+    </p>
+    <p>
+      <a href="/css/standalone/" role="button" class="contrast">Use Standalone &nbsp;›</a><br>
+      <sub>other frameworks <i class="fa-brands fa-tailwind-css"></i><i class="fa-brands fa-bootstrap"></i></sub>
+    </p>
+  </nav>
+</section>
+
+<hr>
+<h2><sup>Documentation</sup></h2>
+<ul class="columns">
+  {% for page in collections.all | eleventyNavigation %}
+  <li>
+    <strong><a href="{{ page.url }}">{{ page.key | safe }}</a></strong>
+    {{ collections.all | eleventyNavigation(page.key) | eleventyNavigationToHtml | safe }}
+  </li>
+  {% endfor %}
+</ul>

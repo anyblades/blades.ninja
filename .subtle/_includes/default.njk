@@ -9,11 +9,23 @@
       align-items: center;
       big a { text-decoration: none; font-weight: bold; font-size: larger; }
     }
+    .hero {
+      display: flex; flex-direction: column; justify-content: center;
+      @media(min-width: 768px) { min-height: calc(100dvh - 200px) }
+      text-align: center; text-wrap: balance;
+
+      nav { justify-content: center; gap: 1rem; margin-block-start: 3rem }
+    }
     :is(h1, h2) sup {
       font-size: 13px; display: block;
       letter-spacing: .0625em; text-transform: uppercase;
     }
     h1 sup { color: #8b4f00 }
+    h1 mark {
+      background: linear-gradient(to right, rgb(215.4, 140.8, 210.2), rgb(184.5, 153, 237.75), rgb(156.6, 165.3, 232.6), rgb(142.75, 168.95, 240.05));
+      background-clip: text;
+      color: transparent;
+    }
     h1 sub {
       display: block; font-size: 50%; line-height: 1.1;
       bottom: 0; /* vertical-align: top; */
@@ -23,7 +35,14 @@
       font-size: 12px; vertical-align: text-bottom;
       font-weight: 600; border-radius: .125rem;
     }
-    /* a[role="button"] {
+    .fa-tailwind-css  { color: deepskyblue }
+    .fa-bootstrap     { color: blueviolet }
+    /*TODO: fix in blades.css */
+    /* a[role=button] {
+      display: inline-flex;
+    } */
+    /* Teasers
+    a[role=button] {
       text-align: start;
       border-width: 1px 0 0 1px;
       margin: 0 0 0.5rem -1rem;
@@ -56,13 +75,13 @@
     <main>{{ content | safe }}</main>
   {% else %}
   <main class="container breakout-all">
-    {% if title != false %}
-    <h1>
-      {% if eleventyNavigation.parent %}<sup>{{ eleventyNavigation.parent | safe }}</sup>{% endif %}
-      {{ title | safe }}
-    </h1>
+    {% if page.url != '/' %}
+      <h1>
+        {% if eleventyNavigation.parent %}<sup>{{ eleventyNavigation.parent | safe }}</sup>{% endif %}
+        {{ title | safe }}
+      </h1>
+      {% if description %}<big>{{ description | safe }}</big>{% endif %}
     {% endif %}
-    {% if description %}<p><big>{{ description }}</big></p>{% endif %}
     {{ content | safe }}
 
     {% for brick in bricks %}
