@@ -80,7 +80,7 @@
         {% if eleventyNavigation.parent %}<sup>{{ eleventyNavigation.parent | safe }}</sup>{% endif %}
         {{ title | safe }}
       </h1>
-      {% if description %}<big>{{ description | safe }}</big>{% endif %}
+      {% if description %}<big>{{ description | markdownify | safe }}</big>{% endif %}
     {% endif %}
     {{ content | safe }}
 
