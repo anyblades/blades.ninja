@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
   parent: Get started
-  key: Standalone version <mark>NEW</mark>
+  key: <em>St</em>andalone version <mark>NEW</mark>
   order: 3
 
 includes:
