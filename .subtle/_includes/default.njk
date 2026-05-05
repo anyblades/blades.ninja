@@ -76,10 +76,15 @@
             | replace('https://raw.githubusercontent.com/anyblades/', '../')
             | replace('/refs/heads/main/', '/') | replace('/refs/heads/master/', '/') %}
         {% endif %}
-        {% for _section in brick.sections | d([brick.section]) %}
-          {% if _section == 'code' %}<h3>How it works</h3>{% endif %}
-          {{ _path | fetch | section(_section) | replace('/*```', '```') | markdownify | safe }}
-        {% endfor %}
+        {% set _fetched = _path | fetch %}
+        {% if brick.section or brick.sections %}
+          {% for _section in brick.sections | d([brick.section]) %}
+            {% if _section == 'code' %}<h3>How it works</h3>{% endif %}
+            {{ _fetched | section(_section) | replace('/*```', '```') | markdownify | safe }}
+          {% endfor %}
+        {% else %}
+          {{ _fetched | markdownify | safe }}
+        {% endif %}
       {% endif %}
     {% endfor %}
 

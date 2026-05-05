@@ -6,37 +6,15 @@ eleventyNavigation:
 summary: Generic Nunjucks/Liquid templates for 11ty/Build Awesome, Jekyll, Shopify, etc.
 
 bricks:
-  - text: |-
+  - md: |-
       ---
-      ## Links
-  - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/_includes/blades/links.liquid
-    sections: [docs, code]
-  - text: |-
+      ## Templating engines
+  - path: ./html/_njk.md
+  - md: ---
+  - path: ./html/_liquid.md
+  - md: |-
       ---
-      ## Sitemap
-  - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/_includes/blades/sitemap.xml.njk
-    sections: [docs, code]
-  - text: |-
-      ---
-      ## More
-  - path: html/_njk.md
-  - text: ---
-  - path: html/_liquid.md
-  - text: |-
-      ---
-      Part of:
-  - teaser: /css/
-  - text: |-
-      ---
-      - Featured by: <!--A-Z-->
-        - https://11tybundle.dev/blog/11ty-bundle-83/
-        - https://11tybundle.dev/categories/nunjucks-macros/
-        - https://github.com/anyblades/awesome-11ty-build-awesome
-      - See also: <!--A-Z-->
-        - https://blog.jim-nielsen.com/2025/lots-of-little-html-pages/
-        - https://buildexcellentwebsit.es/
-
-      {.unlist .columns}
+      ## Templates
 
 revised: 2026-04-15
 ---
