@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "^5.1.2",
-    "@anyblades/subtle": "^0.0.1"
+    "@anyblades/subtle": "^0.0.2"
   },
   "=== SITE GLOBALS": "===",
   "site": {
