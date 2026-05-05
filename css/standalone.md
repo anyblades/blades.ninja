@@ -4,7 +4,7 @@ eleventyNavigation:
   key: <em>St</em>andalone version <mark>NEW</mark>
   order: 3
 
-includes:
+bricks:
   - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/blades.theme.css
     section: code
 ---

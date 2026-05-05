@@ -27,7 +27,7 @@ site:
 #   site.title: "{{ site.title }} | {{ summary | split: '</hgroup>' | first | strip_html }}"
 #   hero: "<br>{{ summary | replace: 'hgroup>', 'h1>' | replace: '<wbr>', '<br>' }}<br>"
 
-includes:
+bricks:
   - tpl: |-
       <h2><sup>Documentation</sup></h2>
       <ul class="columns">

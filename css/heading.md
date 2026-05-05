@@ -4,7 +4,7 @@ eleventyNavigation:
   key: <em>H</em>eading helpers <mark>NEW</mark>
   order: 0
 
-includes:
+bricks:
   - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/content/_typography.css
     section: h-anchor
 ---

@@ -9,7 +9,7 @@ title: Pico+Blades CSS <i>✨🥷</i>
 #     {{ 'https://raw.githubusercontent.com/anyblades/pico/refs/heads/main/README.md'
 #      | if: site.prod | default: '../../pico/README.md' | fetch | section: 'summary' | markdownify }}
 
-includes:
+bricks:
   - path: https://raw.githubusercontent.com/anyblades/pico/refs/heads/main/README.md
     section: docs
   - md: |-

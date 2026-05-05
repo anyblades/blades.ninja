@@ -5,7 +5,7 @@ eleventyNavigation:
   order: 5
 summary: Generic Nunjucks/Liquid templates for 11ty/Build Awesome, Jekyll, Shopify, etc.
 
-includes:
+bricks:
   - text: |-
       ---
       ## Base HTML {#base}

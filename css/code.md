@@ -4,7 +4,7 @@ eleventyNavigation:
   key: <em>C</em>ode formatting <mark>NEW</mark>
   order: 8
 
-includes:
+bricks:
   - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/content/_code.css
     section: docs
 ---

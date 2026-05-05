@@ -8,7 +8,7 @@ eleventyNavigation:
 #     {{ 'https://raw.githubusercontent.com/anyblades/float-label-css/refs/heads/master/README.md'
 #      | if: site.prod | default: '../../float-label-css/README.md' | fetch | section: 'summary' | markdownify }}
 
-includes:
+bricks:
   - path: https://raw.githubusercontent.com/anyblades/float-label-css/refs/heads/master/README.md
     section: docs-demo-install
   - md: |-
