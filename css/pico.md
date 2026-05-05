@@ -1,8 +1,8 @@
 ---
 eleventyNavigation:
   parent: Get started
-  key: About <i>✨</i>
-  order: 10
+  key: Pico CSS ✨
+  order: 4
 title: Pico+Blades CSS <i>✨🥷</i>
 # eleventyComputed:
 #   summary: |-

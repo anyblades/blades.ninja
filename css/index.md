@@ -5,6 +5,6 @@ eleventyNavigation:
   order: 0
 
 bricks:
-  - path: https://raw.githubusercontent.com/anyblades/pico/refs/heads/main/README.md
+  - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md
     section: install
 ---
