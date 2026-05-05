@@ -8,14 +8,6 @@ summary: Generic Nunjucks/Liquid templates for 11ty/Build Awesome, Jekyll, Shopi
 bricks:
   - text: |-
       ---
-      ## Base HTML {#base}
-  - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/_includes/blades/html.njk
-    sections: [docs, code]
-  - text: <div><hr></div>
-  - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/_includes/blades/html.liquid
-    sections: [docs, code]
-  - text: |-
-      ---
       ## Links
   - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/_includes/blades/links.liquid
     sections: [docs, code]

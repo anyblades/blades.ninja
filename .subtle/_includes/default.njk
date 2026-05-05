@@ -57,7 +57,7 @@
   <main class="container breakout-all">
     {% if title != false %}
     <h1>
-      {% if eleventyNavigation.parent %}<sup>{{ eleventyNavigation.parent }}</sup>{% endif %}
+      {% if eleventyNavigation.parent %}<sup>{{ eleventyNavigation.parent | safe }}</sup>{% endif %}
       {{ title | d(eleventyNavigation.key | remove_tag('mark')) | safe }}
     </h1>
     {% endif %}
