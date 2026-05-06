@@ -17,6 +17,7 @@
   },
   "=== SITE GLOBALS": "===",
   "site": {
+    "base": "https://blades.ninja",
     "title": "Blades",
     "styles": [
       "https://cdn.jsdelivr.net/npm/@anyblades/blades@0/assets/blades.min.css",

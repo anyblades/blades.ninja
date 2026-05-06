@@ -38,7 +38,8 @@ bricks:
   {% for page in collections.all | eleventyNavigation %}
   <li>
     <strong><a href="{{ page.url }}">{{ page.key | safe }}</a></strong>
-    {{ collections.all | eleventyNavigation(page.key) | eleventyNavigationToHtml | safe }}
+    {{ collections.all | eleventyNavigation(page.key) | eleventyNavigationToHtml
+      | replace(' href="/', ' href="' + (site.base if site.prod) + '/') | safe }}
   </li>
   {% endfor %}
 </ul>
