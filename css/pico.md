@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
   parent: Get started
-  key: Pico CSS ✨
+  key: Pico fork <img src="https://img.shields.io/github/v/release/anyblades/pico?label=&color=white"> <mark>NEW</mark>
   order: 4
 title: Pico+Blades CSS <i>✨🥷</i>
 # eleventyComputed:
