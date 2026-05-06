@@ -4,6 +4,7 @@ eleventyNavigation:
   key: Pico fork <img src="https://img.shields.io/github/v/release/anyblades/pico?label=&color=white"> <mark>NEW</mark>
   order: 4
 title: Pico+Blades CSS <i>✨🥷</i>
+description: https://github.com/anyblades/pico
 # eleventyComputed:
 #   summary: |-
 #     {{ 'https://raw.githubusercontent.com/anyblades/pico/refs/heads/main/README.md'
