@@ -41,10 +41,6 @@
   parent: Content
   key: Button
   order: 3
-- src: https://picocss.com/docs/table
-  parent: Content
-  key: Table
-  order: 4
 
 - src: https://picocss.com/docs/forms
   parent: Forms
