@@ -117,6 +117,7 @@
     {% endfor %}
 
     {% if page.url != '/' %}
+      <hr>
       {{ collections.all | eleventyNavigation(eleventyNavigation.key) | eleventyNavigationToHtml | safe }}
     {% endif %}
   </main>

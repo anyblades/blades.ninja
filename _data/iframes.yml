@@ -17,40 +17,6 @@
   key: Typography
   order: -1
 
-- src: https://picocss.com/docs/forms
-  parent: Forms
-  key: Overview
-  order: -1
-  permalink: /css/forms/overview/
-- src: https://picocss.com/docs/forms/input
-  parent: Forms
-  key: Input
-  order: 0
-- src: https://picocss.com/docs/forms/textarea
-  parent: Forms
-  key: Textarea
-  order: 1
-- src: https://picocss.com/docs/forms/select
-  parent: Forms
-  key: Select
-  order: 2
-- src: https://picocss.com/docs/forms/checkboxes
-  parent: Forms
-  key: Checkboxes
-  order: 3
-- src: https://picocss.com/docs/forms/radios
-  parent: Forms
-  key: Radios
-  order: 4
-- src: https://picocss.com/docs/forms/switch
-  parent: Forms
-  key: Switch
-  order: 5
-- src: https://picocss.com/docs/forms/range
-  parent: Forms
-  key: Range
-  order: 6
-
 - src: https://picocss.com/docs/accordion
   parent: Components
   key: Accordion
