@@ -16,14 +16,6 @@
   parent: Content
   key: Typography
   order: -1
-- src: https://picocss.com/docs/link
-  parent: Content
-  key: Link
-  order: 1
-- src: https://picocss.com/docs/button
-  parent: Content
-  key: Button
-  order: 3
 
 - src: https://picocss.com/docs/forms
   parent: Forms
