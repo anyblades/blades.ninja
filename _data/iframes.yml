@@ -2,11 +2,6 @@
   parent: Get started
   key: Color schemes
   order: 1
-- src: https://picocss.com/docs/css-variables
-  parent: Get started
-  key: CSS variables
-  order: 2
-  permalink: /css/variables/
 - src: https://picocss.com/examples
   parent: Get started
   key: Examples
