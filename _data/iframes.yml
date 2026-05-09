@@ -7,22 +7,10 @@
   key: Examples
   order: 10
 
-- src: https://picocss.com/docs/container
-  parent: Layout
-  key: Container
-  order: 0
-- src: https://picocss.com/docs/landmarks-section
-  parent: Layout
-  key: Landmarks & section
-  order: 2
 - src: https://picocss.com/docs/grid
   parent: Layout
   key: Grid
   order: 3
-- src: https://picocss.com/docs/overflow-auto
-  parent: Layout
-  key: Overflow auto
-  order: 5
 
 - src: https://picocss.com/docs/typography
   parent: Content
