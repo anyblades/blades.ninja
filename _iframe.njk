@@ -1,15 +1,10 @@
 ---
-permalink: "{{ iframe.permalink or iframe.src | replace('https://picocss.com/', '/') | replace('/docs/', '/css/') }}/"
-eleventyComputed:
-  eleventyNavigation:
-    parent: "{{ iframe.parent }}"
-    key: "{{ iframe.key }}"
-    order: "{{ iframe.order }}"
+permalink: "{{ eleventyNavigation.data.iframe | replace('https://picocss.com/', '/') | replace('/docs/', '/css/') }}/"
 
 pagination:
   data: iframes
   size: 1
-  alias: iframe
+  alias: eleventyNavigation
   addAllPagesToCollections: true
 
 site:
@@ -21,6 +16,6 @@ site:
 ---
 
 <iframe
-  src="{{ iframe.src }}"
-  style="{{ 'max-width: 1023px' if iframe.key != 'Examples' }}"
+  src="{{ iframe }}"
+  style="{{ 'max-width: 1023px' if eleventyNavigation.key != 'Examples' }}"
 ></iframe>

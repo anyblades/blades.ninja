@@ -1,24 +1,30 @@
-- src: https://picocss.com/docs/color-schemes
-  parent: Get started
+- parent: Get started
   key: Color schemes
   order: 1
-- src: https://picocss.com/examples
-  parent: Get started
+  data:
+    iframe: https://picocss.com/docs/color-schemes
+- parent: Get started
   key: Examples
   order: 10
-- src: https://picocss.com/docs/grid
-  parent: Layout
+  data:
+    iframe: https://picocss.com/examples
+- parent: Layout
   key: Grid
   order: 3
-- src: https://picocss.com/docs/typography
-  parent: Content
+  data:
+    iframe: https://picocss.com/docs/grid
+- parent: Content
   key: Typography
   order: -1
-- src: https://picocss.com/docs/modal
-  parent: Components
+  data:
+    iframe: https://picocss.com/docs/typography
+- parent: Components
   key: Modal
   order: 5
-- src: https://picocss.com/docs/progress
-  parent: Components
+  data:
+    iframe: https://picocss.com/docs/modal
+- parent: Components
   key: Progress
   order: 7
+  data:
+    iframe: https://picocss.com/docs/progress
