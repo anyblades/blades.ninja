@@ -1,10 +1,10 @@
 ---
-permalink: "{{ eleventyNavigation.data.iframe | replace('https://picocss.com/', '/') | replace('/docs/', '/css/') }}/"
+permalink: "{{ _.iframe | replace('https://picocss.com/', '/') | replace('/docs/', '/css/') }}/"
 
 pagination:
   data: pages
   size: 1
-  alias: eleventyNavigation
+  alias: _
   addAllPagesToCollections: true
 
 site:

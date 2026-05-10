@@ -1,6 +1,6 @@
 export default {
   eleventyComputed: {
-    iframe: (data) => data.eleventyNavigation.data.iframe,
-    bricks: (data) => data.eleventyNavigation.data.bricks,
+    eleventyNavigation: (data) => data._.eleventyNavigation,
+    iframe: (data) => data._.iframe,
   },
 };
