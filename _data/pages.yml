@@ -3,28 +3,28 @@
     key: Color schemes
     order: 1
   iframe: https://picocss.com/docs/color-schemes
-# - parent: Get started
-#   key: Examples
-#   order: 10
-#   data:
-#     iframe: https://picocss.com/examples
-# - parent: Layout
-#   key: Grid
-#   order: 3
-#   data:
-#     iframe: https://picocss.com/docs/grid
-# - parent: Content
-#   key: Typography
-#   order: -1
-#   data:
-#     iframe: https://picocss.com/docs/typography
-# - parent: Components
-#   key: Modal
-#   order: 5
-#   data:
-#     iframe: https://picocss.com/docs/modal
-# - parent: Components
-#   key: Progress
-#   order: 7
-#   data:
-#     iframe: https://picocss.com/docs/progress
+- eleventyNavigation:
+    parent: Get started
+    key: Examples
+    order: 10
+  iframe: https://picocss.com/examples
+- eleventyNavigation:
+    parent: Layout
+    key: Grid
+    order: 3
+  iframe: https://picocss.com/docs/grid
+- eleventyNavigation:
+    parent: Content
+    key: Typography
+    order: -1
+  iframe: https://picocss.com/docs/typography
+- eleventyNavigation:
+    parent: Components
+    key: Modal
+    order: 5
+  iframe: https://picocss.com/docs/modal
+- eleventyNavigation:
+    parent: Components
+    key: Progress
+    order: 7
+  iframe: https://picocss.com/docs/progress
