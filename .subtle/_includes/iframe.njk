@@ -1,0 +1,17 @@
+{% extends './default.njk' %}
+
+{% set content_for_header %}
+  <style>
+    main { display: flex; overflow: clip; padding: 0 !important }
+    iframe { width: 100%; margin: -160px auto 0 auto }
+    footer { display: none }
+  </style>
+{% endset %}
+
+{% block main %}
+  <main>
+    <iframe src="{{ iframe }}"
+      style="{{ 'max-width: 1023px' if eleventyNavigation.key != 'Examples' }}"
+    ></iframe>
+  </main>
+{% endblock %}

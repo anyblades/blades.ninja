@@ -1,21 +1,10 @@
 ---
-permalink: "{{ _.iframe | replace('https://picocss.com/', '/') | replace('/docs/', '/css/') }}/"
-
 pagination:
   data: pages
   size: 1
   alias: _
   addAllPagesToCollections: true
-
-site:
-  inline_styles:
-    - |-
-      main { display: flex; overflow: clip; padding: 0 !important }
-      iframe { width: 100%; margin: -160px auto 0 auto }
-      footer { display: none }
+permalink: "{{ _.permalink if _.permalink else (_.iframe | replace('https://picocss.com/', '/') | replace('/docs/', '/css/') ) }}/"
+eleventyComputed:
+  layout: "{{ './iframe.njk' if _.iframe else './default.njk' }}"
 ---
-
-<iframe
-  src="{{ iframe }}"
-  style="{{ 'max-width: 1023px' if eleventyNavigation.key != 'Examples' }}"
-></iframe>

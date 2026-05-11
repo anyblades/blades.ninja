@@ -1,7 +1,7 @@
 {% if not title and title != false %}{% set title = eleventyNavigation.key | remove_tag('mark') %}{% endif %}
-{% extends 'blades/html.njk' %}
+{% extends './blades/html.njk' %}
 
-{% set content_for_header %}
+{% set content_for_header %}{{ content_for_header | safe }}
   <link rel="canonical" href="https://11ty.blades.ninja/starters/" />
   <style>
     header nav {
@@ -72,9 +72,7 @@
       </ul>
     </nav>
   </header>
-  {% if iframe %}
-    <main>{{ content | safe }}</main>
-  {% else %}
+  {% block main %}
   <main class="container breakout-all">
     {% if page.url != '/' %}
       <h1>
@@ -121,7 +119,7 @@
       {{ collections.all | eleventyNavigation(eleventyNavigation.key) | eleventyNavigationToHtml | safe }}
     {% endif %}
   </main>
-  {% endif %}
+  {% endblock %}
   <footer class="container">
     <hr style="margin-block-start: 0">
     <small><small>
