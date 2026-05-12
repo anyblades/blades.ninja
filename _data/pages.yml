@@ -260,3 +260,38 @@
   bricks:
     - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/_utilities.css
       section: docs
+
+# HTML
+- permalink: false
+  eleventyNavigation:
+    parent: Templates <mark>NEW</mark>
+    key: Overview
+    order: -1
+    url: /html/
+- permalink: /html/starter/
+  eleventyNavigation:
+    parent: Templates <mark>NEW</mark>
+    key: <em>HTML</em> starter <mark>NEW</mark>
+    order: 0
+  bricks:
+    - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/_includes/blades/html.njk
+      sections: [docs, code]
+    - md: ---
+    - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/_includes/blades/html.liquid
+      sections: [docs, code]
+- permalink: /html/links/
+  eleventyNavigation:
+    parent: Templates <mark>NEW</mark>
+    key: <em>L</em>inks <mark>NEW</mark>
+    order: 1
+  bricks:
+    - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/_includes/blades/links.liquid
+      sections: [docs, code]
+- permalink: /html/sitemap/
+  eleventyNavigation:
+    parent: Templates <mark>NEW</mark>
+    key: <em>S</em>itemap <mark>NEW</mark>
+    order: 2
+  bricks:
+    - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/_includes/blades/sitemap.xml.njk
+      sections: [docs, code]

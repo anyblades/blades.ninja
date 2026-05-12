@@ -4,7 +4,8 @@ pagination:
   size: 1
   alias: _
   addAllPagesToCollections: true
-permalink: "{{ _.permalink if _.permalink else (_.iframe | replace('https://picocss.com/', '/') | replace('/docs/', '/css/') ) }}/"
+#TODO: add `is defined` to tricks
+permalink: "{{ _.permalink if _.permalink is defined else (_.iframe | replace('https://picocss.com/', '/') | replace('/docs/', '/css/') ) }}/"
 eleventyComputed:
   layout: "{{ './iframe.njk' if _.iframe else './default.njk' }}"
 ---
