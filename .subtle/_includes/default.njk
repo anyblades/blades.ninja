@@ -81,8 +81,8 @@
       </h1>
       {% if description %}<big>{{ description | markdownify | safe }}</big>{% endif %}
     {% endif %}
-    {{ content | safe }}
 
+    {% set content_here = false %}
     {% for brick in bricks %}
       {% if brick.md %}
         {{ brick.md | markdownify | safe }}
@@ -111,8 +111,15 @@
         {% else %}
           {{ _fetched | markdownify | safe }}
         {% endif %}
+      {% elif brick.content_here %}
+        {{ content | safe }}
+        {% set content_here = true %}
       {% endif %}
     {% endfor %}
+
+    {% if not content_here %}
+      {{ content | safe }}
+    {% endif %}
 
     {% if page.url != '/' %}
       <hr>
