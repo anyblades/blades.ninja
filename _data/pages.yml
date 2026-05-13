@@ -101,7 +101,7 @@
 - permalink: /css/table/
   eleventyNavigation:
     parent: Content
-    key: <em>T</em>able <mark>NEW</mark>
+    key: <em>T</em>able <mark>UPD</mark>
     order: 5
   bricks:
     - path: https://picocss.com/docs/table
