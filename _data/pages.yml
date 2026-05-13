@@ -130,7 +130,7 @@
     key: Forms
     order: 3
   title: Forms overview
-- permalink: false
+- permalink: /css/forms/_overview/
   eleventyNavigation:
     parent: Forms
     key: Overview
@@ -268,7 +268,7 @@
       section: docs
 
 # Templates
-- permalink: false
+- permalink: /html/_overview/
   eleventyNavigation:
     parent: Templates <mark>NEW</mark>
     key: Overview
