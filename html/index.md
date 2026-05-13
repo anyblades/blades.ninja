@@ -6,6 +6,7 @@ eleventyNavigation:
 summary: Generic Nunjucks/Liquid templates for 11ty/Build Awesome, Jekyll, Shopify, etc.
 
 bricks:
+  - content_here: true
   - md: |-
       ---
       ## Templating engines

@@ -10,6 +10,7 @@ description: https://github.com/anyblades/float-label-css
 #      | if: site.prod | default: '../../float-label-css/README.md' | fetch | section: 'summary' | markdownify }}
 
 bricks:
+  - content_here: true
   - path: https://raw.githubusercontent.com/anyblades/float-label-css/refs/heads/master/README.md
     section: docs-demo-install
   - md: |-
