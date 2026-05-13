@@ -31,5 +31,6 @@
   },
   "=== METADATA": "===",
   "author": "Anton Staroverov",
-  "license": "MIT"
+  "license": "MIT",
+  "description": "Framework-agnostic, class-light CSS⁺ blade kit. Use with Pico, Simple, Tailwind, or any other CSS reset/framework."
 }
