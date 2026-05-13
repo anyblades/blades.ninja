@@ -129,7 +129,7 @@
   bricks:
     - path: https://picocss.com/docs/forms
     - md: ---
-- permalink: /css/forms/_overview/
+- permalink: false
   eleventyNavigation:
     parent: Forms
     key: Overview
@@ -267,7 +267,7 @@
       section: docs
 
 # Templates
-- permalink: /html/_overview/
+- permalink: false
   eleventyNavigation:
     parent: Templates <mark>NEW</mark>
     key: Overview
