@@ -3,13 +3,13 @@
 {% set content_for_header %}
   <style>
     main { display: flex; overflow: clip; padding: 0 !important }
-    iframe { width: 100%; margin: -160px auto 0 auto }
+    iframe { width: 100%; max-width: 1023px; margin: -160px auto 0 auto }
     footer { display: none }
   </style>
 {% endset %}
 
 {% block main %}
   <main>
-    <iframe src="{{ iframe }}" style="max-width: 1023px"></iframe>
+    <iframe src="{{ iframe }}"></iframe>
   </main>
 {% endblock %}
