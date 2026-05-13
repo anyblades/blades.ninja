@@ -130,6 +130,9 @@
     key: Forms
     order: 3
   title: Forms overview
+  bricks:
+    - path: https://picocss.com/docs/forms
+    - md: ---
 - permalink: /css/forms/_overview/
   eleventyNavigation:
     parent: Forms
