@@ -18,7 +18,7 @@ export default function (eleventyConfig) {
       eleventyConfig.watchIgnores.add(`../.subtle/${line}`);
 
   // Virtual pages
-  const pages = yaml.load(readFileSync("../_data/pages.yml", "utf8"));
+  const pages = yaml.load(readFileSync("../pages.yml", "utf8"));
   for (const [index, data] of pages.entries()) {
     const virtualSlug = data.permalink
       ? data.permalink + "index"
