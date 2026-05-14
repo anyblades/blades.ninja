@@ -49,7 +49,7 @@
 - permalink: /css/columns/
   eleventyNavigation:
     parent: Layout
-    key: <em>Te</em>xt columns <mark>NEW</mark>
+    key: Text columns <mark>NEW</mark>
     order: 4
   bricks:
     - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/_layout.css
@@ -75,7 +75,7 @@
 - permalink: /css/heading/
   eleventyNavigation:
     parent: Content
-    key: <em>H</em>eading helpers <mark>NEW</mark>
+    key: Heading helpers <mark>NEW</mark>
     order: 0
   bricks:
     - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/content/_typography.css
@@ -97,7 +97,7 @@
 - permalink: /css/table/
   eleventyNavigation:
     parent: Content
-    key: <em>T</em>able <mark>UPD</mark>
+    key: Table <mark>UPD</mark>
     order: 5
   bricks:
     - path: https://picocss.com/docs/table
@@ -106,7 +106,7 @@
 - permalink: /css/list/
   eleventyNavigation:
     parent: Content
-    key: <em>L</em>ist helpers <mark>NEW</mark>
+    key: List helpers <mark>NEW</mark>
     order: 7
   bricks:
     - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/content/_typography.css
@@ -114,7 +114,7 @@
 - permalink: /css/code/
   eleventyNavigation:
     parent: Content
-    key: <em>C</em>ode formatting <mark>NEW</mark>
+    key: Code formatting <mark>NEW</mark>
     order: 8
   bricks:
     - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/content/_code.css
@@ -252,7 +252,7 @@
 - permalink: /css/jump/
   eleventyNavigation:
     parent: Components
-    key: <em>Ju</em>mp to... <mark>NEW</mark>
+    key: Jump to... <mark>NEW</mark>
     order: 9
   bricks:
     - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/_layout.css
@@ -260,7 +260,7 @@
 - permalink: /css/utils/
   eleventyNavigation:
     parent: Components
-    key: <em>Ut</em>ilities <mark>NEW</mark>
+    key: Utilities <mark>NEW</mark>
     order: 10
   bricks:
     - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/_utilities.css
@@ -276,7 +276,7 @@
 - permalink: /html/starter/
   eleventyNavigation:
     parent: Templates <mark>NEW</mark>
-    key: <em>HTML</em> starter <mark>NEW</mark>
+    key: HTML starter <mark>NEW</mark>
     order: 0
   bricks:
     - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/_includes/blades/html.njk
@@ -287,7 +287,7 @@
 - permalink: /html/links/
   eleventyNavigation:
     parent: Templates <mark>NEW</mark>
-    key: <em>L</em>inks <mark>NEW</mark>
+    key: Links <mark>NEW</mark>
     order: 1
   bricks:
     - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/_includes/blades/links.liquid
@@ -295,7 +295,7 @@
 - permalink: /html/sitemap/
   eleventyNavigation:
     parent: Templates <mark>NEW</mark>
-    key: <em>S</em>itemap <mark>NEW</mark>
+    key: Sitemap <mark>NEW</mark>
     order: 2
   bricks:
     - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/_includes/blades/sitemap.xml.njk

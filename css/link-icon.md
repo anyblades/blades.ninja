@@ -3,7 +3,7 @@ eleventyNavigation:
   parent: Content
   key: Link icon <mark>NEW</mark>
   order: 2
-title: '<em>L</em>ink <code style="padding: 0">i</code>con'
+title: 'Link <code style="padding: 0">i</code>con'
 # eleventyComputed:
 #   summary: |-
 #     {{ 'https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/link-icon.css'

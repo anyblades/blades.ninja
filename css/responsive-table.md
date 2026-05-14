@@ -3,7 +3,7 @@ eleventyNavigation:
   parent: Content
   key: Responsive table <mark>NEW</mark>
   order: 6
-title: <em>Re</em>sponsive table <sub>without wrapping container</sub>
+title: Responsive table <sub>without wrapping container</sub>
 # eleventyComputed:
 #   summary: |-
 #     {{ 'https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/responsive-table.css'

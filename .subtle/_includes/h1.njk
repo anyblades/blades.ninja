@@ -1,0 +1,8 @@
+{% set __title = '^' + title %}
+
+{% set _first = title | first %}
+{% for _em in ["CSS ", "HTML ", "Bl", "In", "Fl", _first if _first != '<' else ''] %}
+  {% set __title = __title | replace('^' + _em, '<em>' + _em + '</em>') %}
+{% endfor %}
+
+{{ __title | replace('Blades', '<em>Bl</em>ades') | safe }}

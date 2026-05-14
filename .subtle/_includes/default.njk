@@ -77,7 +77,7 @@
     {% if page.url != '/' %}
       <h1>
         {% if eleventyNavigation.parent %}<sup>{{ eleventyNavigation.parent | safe }}</sup>{% endif %}
-        {{ title | safe }}
+        {% if title %}{% include './h1.njk' %}{% endif %}
       </h1>
       {% if description %}<big>{{ description | markdownify | safe }}</big>{% endif %}
     {% endif %}

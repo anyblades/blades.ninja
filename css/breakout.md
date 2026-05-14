@@ -1,7 +1,7 @@
 ---
 eleventyNavigation:
   parent: Layout
-  key: <em>Br</em>eakout container <mark>NEW</mark>
+  key: Breakout container <mark>NEW</mark>
   order: 1
 # eleventyComputed:
 #   summary: |-
