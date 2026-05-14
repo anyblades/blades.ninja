@@ -19,6 +19,6 @@ bricks:
 <!--prettier-ignore-->
 ```html
 <link rel="stylesheet" href="
-  https://cdn.jsdelivr.net/npm/@anyblades/blades@0/assets/breakout.min.css
+  https://cdn.jsdelivr.net/npm/@anyblades/blades@2/assets/breakout.min.css
 ">
 ```

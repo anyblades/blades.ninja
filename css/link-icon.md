@@ -20,6 +20,6 @@ bricks:
 <!--prettier-ignore-->
 ```html
 <link rel="stylesheet" href="
-  https://cdn.jsdelivr.net/npm/@anyblades/blades@0/assets/link-icon.min.css
+  https://cdn.jsdelivr.net/npm/@anyblades/blades@2/assets/link-icon.min.css
 ">
 ```
