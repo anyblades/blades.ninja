@@ -20,7 +20,6 @@
     order: 2
   bricks:
     - path: https://picocss.com/docs/css-variables
-# iframe: https://picocss.com/examples
 
 # Layout
 - permalink: /css/layout/
