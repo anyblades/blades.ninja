@@ -5,7 +5,9 @@
   "scripts": {
     "start": "npm run build -- --serve",
     "stage": "rm -r ./_site/ || true && npm run build && serve ./_site/",
-    "build": "eleventy --input=../"
+    "build": "eleventy --input=../",
+    "11ty:start": "npm run 11ty:build -- --serve",
+    "11ty:build": "eleventy --input=../../11ty.blades.ninja/"
   },
   "devDependencies": {
     "prettier-plugin-jinja-template": "^2.1.0",
@@ -19,7 +21,16 @@
   "site": {
     "base": "https://blades.ninja",
     "title": "Blades",
-    "brand": "🥷 <em>Bl</em>ades"
+    "brand": "🥷 <em>Bl</em>ades",
+    "styles": [
+      "https://cdn.jsdelivr.net/npm/@anyblades/blades@0/assets/blades.min.css",
+      "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7/css/all.min.css",
+      "https://cdn.jsdelivr.net/npm/prismjs@1/themes/prism-okaidia.min.css"
+    ],
+    "scripts": [
+      "https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-core.min.js",
+      "https://cdn.jsdelivr.net/npm/prismjs@1/plugins/autoloader/prism-autoloader.min.js"
+    ]
   },
   "=== METADATA": "===",
   "author": "Anton Staroverov",

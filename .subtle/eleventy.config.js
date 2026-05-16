@@ -8,8 +8,10 @@ export default function (eleventyConfig) {
   eleventyConfig.setIncludesDirectory("./.subtle/_includes/");
   eleventyConfig.addPassthroughCopy({ "./.subtle/_public/": "." });
   eleventyConfig.addPassthroughCopy("../**/*.png");
-  const pkg = JSON.parse(readFileSync("./package.json", "utf8"));
-  eleventyConfig.addGlobalData("site", pkg.site);
+  eleventyConfig.addGlobalData("eleventyComputed.site", () => (data) => ({
+    ...data.pkg.site,
+    ...data.site,
+  }));
   eleventyConfig.addFilter("split", (str, sep) => str.split(sep));
 
   //TODO: move to 11ty-blades?
@@ -18,7 +20,9 @@ export default function (eleventyConfig) {
       eleventyConfig.watchIgnores.add(`../.subtle/${line}`);
 
   // Virtual pages
-  const pages = yaml.load(readFileSync("../pages.yml", "utf8"));
+  const pages = yaml.load(
+    readFileSync(eleventyConfig.directories.input + "pages.yml", "utf8"),
+  );
   for (const [index, data] of pages.entries()) {
     const virtualSlug = data.permalink
       ? data.permalink + "index"
