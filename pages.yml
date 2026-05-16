@@ -1,4 +1,9 @@
 # Get started
+- permalink: false
+  eleventyNavigation:
+    key: Get started
+    order: 0
+    url: /css/
 - permalink: /css/
   eleventyNavigation:
     parent: Get started
