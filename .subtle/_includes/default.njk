@@ -101,8 +101,9 @@ site:
       {% elif brick.path %}
         {% set _path = brick.path %}
         {% if not site.prod and '/anyblades/' in _path %}
+          {% set _repos = '../' if '/blades.' in site.base else '../../' %}
           {% set _path = _path
-            | replace('https://raw.githubusercontent.com/anyblades/', '../')
+            | replace('https://raw.githubusercontent.com/anyblades/', _repos)
             | replace('/refs/heads/main/', '/') | replace('/refs/heads/master/', '/') %}
         {% endif %}
         {% set _fetched = _path | fetch %}
