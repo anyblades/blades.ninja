@@ -61,10 +61,15 @@
         <li><a href="/#docs">Docs</a></li>
         {% for page in collections.all | eleventyNavigation %}
         <li class="opt">
+          {% set _subnav = collections.all | eleventyNavigation(page.key) | eleventyNavigationToHtml %}
+          {% if _subnav %}
           <details class="dropdown">
             <summary role="link">{{ page.key | safe }}</summary>
-            {{ collections.all | eleventyNavigation(page.key) | eleventyNavigationToHtml | safe }}
+            {{ _subnav | safe }}
           </details>
+          {% else %}
+          <a href="{{ page.url }}">{{ page.key | safe }}</a>
+          {% endif %}
         </li>
         {% endfor %}
         <li class="faded">|</li>
