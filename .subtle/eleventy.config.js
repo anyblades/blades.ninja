@@ -1,6 +1,5 @@
 import baseConfig from "@anyblades/eleventy-blades/base-config";
 import { readFileSync } from "node:fs";
-import pkg from "./package.json" with { type: "json" };
 import yaml from "js-yaml";
 
 export default function (eleventyConfig) {
@@ -9,6 +8,7 @@ export default function (eleventyConfig) {
   eleventyConfig.setIncludesDirectory("./.subtle/_includes/");
   eleventyConfig.addPassthroughCopy({ "./.subtle/_public/": "." });
   eleventyConfig.addPassthroughCopy("../**/*.png");
+  const pkg = JSON.parse(readFileSync("./package.json", "utf8"));
   eleventyConfig.addGlobalData("site", pkg.site);
   eleventyConfig.addFilter("split", (str, sep) => str.split(sep));
 

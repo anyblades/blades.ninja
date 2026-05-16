@@ -19,15 +19,7 @@
   "site": {
     "base": "https://blades.ninja",
     "title": "Blades",
-    "styles": [
-      "https://cdn.jsdelivr.net/npm/@anyblades/blades@0/assets/blades.min.css",
-      "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7/css/all.min.css",
-      "https://cdn.jsdelivr.net/npm/prismjs@1/themes/prism-okaidia.min.css"
-    ],
-    "scripts": [
-      "https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-core.min.js",
-      "https://cdn.jsdelivr.net/npm/prismjs@1/plugins/autoloader/prism-autoloader.min.js"
-    ]
+    "brand": "🥷 <em>Bl</em>ades"
   },
   "=== METADATA": "===",
   "author": "Anton Staroverov",

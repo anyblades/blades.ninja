@@ -1,3 +1,13 @@
+---
+site:
+  styles:
+  - https://cdn.jsdelivr.net/npm/@anyblades/blades@0/assets/blades.min.css
+  - https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7/css/all.min.css
+  - https://cdn.jsdelivr.net/npm/prismjs@1/themes/prism-okaidia.min.css
+  scripts:
+  - https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-core.min.js
+  - https://cdn.jsdelivr.net/npm/prismjs@1/plugins/autoloader/prism-autoloader.min.js
+---
 {% if not title and title != false %}{% set title = eleventyNavigation.key | remove_tag('mark') %}{% endif %}
 {% extends './blades/html.njk' %}
 
@@ -55,7 +65,7 @@
   <header class="container">
     <nav>
       {#TODO: add "Nav brand" helper #}
-      <big><a href="/">🥷 <em>Bl</em>ades</a></big>
+      <big><a href="/">{{ site.brand | safe }}</a></big>
       <ul>
         <li><a href="/#docs">Docs</a></li>
         {% for page in collections.all | eleventyNavigation %}
