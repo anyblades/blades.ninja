@@ -3,12 +3,17 @@ permalink: /
 eleventyComputed:
   #TODO: add to tricks
   description: |-
-    {{ ('https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md' if site.prod else '../blades/README.md')
+    {{ ('https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md' if site.prod else '../../blades/README.md')
       | fetch | section('summary') | markdownify | safe }}
   title: "{{ site.title }} • {{ description | split('</h1>') | first | striptags }}"
 
 bricks:
   - content_here: true
+  - md: |-
+      ---
+      ## <sup>Documentation</sup> {#docs}
+      If you know Pico — you know Blades already:
+  - tpl: "{% include './sitenav.njk' %}"
   - md: ---
   - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md
     section: info
@@ -19,26 +24,17 @@ bricks:
 
   <nav>
     <p>
-      <a href="/css/" role="button">Get Started &nbsp;›</a><br>
+      <a href="/css/" role="button">Get Started &nbsp;›</a><br />
       <sub>with Pico CSS ✨</sub>
     </p>
     <p>
-      <a href="/css/standalone/" role="button" class="contrast">Standalone Version &nbsp;›</a><br>
-      <sub>for other frameworks <i class="fa-brands fa-tailwind-css"></i><i class="fa-brands fa-bootstrap"></i></sub>
+      <a href="/css/standalone/" role="button" class="contrast"
+        >Standalone Version &nbsp;›</a
+      ><br />
+      <sub
+        >for other frameworks <i class="fa-brands fa-tailwind-css"></i
+        ><i class="fa-brands fa-bootstrap"></i
+      ></sub>
     </p>
   </nav>
 </section>
-
-<hr>
-<h2 id="docs"><sup>Documentation</sup></h2>
-<p>If you know Pico — you know Blades already:</p>
-
-<ul class="columns">
-  {% for page in collections.all | eleventyNavigation %}
-  <li>
-    <strong><a href="{{ page.url }}">{{ page.key | safe }}</a></strong>
-    {{ collections.all | eleventyNavigation(page.key) | eleventyNavigationToHtml
-      | replace(' href="/', ' href="' + (site.base if site.prod) + '/') | safe }}
-  </li>
-  {% endfor %}
-</ul>

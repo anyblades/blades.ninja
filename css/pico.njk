@@ -18,7 +18,7 @@ bricks:
     section: docs2
 ---
 
-{{ ('https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md' if site.prod else '../blades/README.md')
+{{ ('https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md' if site.prod else '../../blades/README.md')
   | fetch | section('install')
   | replace('/blades/archive/', '/pico/archive/')
   | replace('@anyblades/blades@', '@anyblades/pico@')
