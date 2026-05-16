@@ -9,7 +9,7 @@ bricks:
   - content_here: true
   - md: |-
       ---
-      ## Templating engines
+      ## Template engines {#engines}
   - path: ./html/_njk.md
   - md: ---
   - path: ./html/_liquid.md
