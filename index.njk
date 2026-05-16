@@ -2,11 +2,10 @@
 permalink: /
 eleventyComputed:
   #TODO: add to tricks
-  _description: |-
+  description: |-
     {{ ('https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md' if site.prod else '../blades/README.md')
       | fetch | section('summary') | markdownify | safe }}
-  description: "{{ _description | replace('&nbsp;', ' ') | safe }}"
-  title: "{{ site.title}} • {{ description | split('</h1>') | first | striptags }}"
+  title: "{{ site.title }} • {{ description | split('</h1>') | first | striptags }}"
 
 bricks:
   - content_here: true
@@ -16,7 +15,7 @@ bricks:
 ---
 
 <section class="hero">
-  {{ _description | replace('<wbr>', '<br>') | safe }}
+  {{ description | safe }}
 
   <nav>
     <p>
