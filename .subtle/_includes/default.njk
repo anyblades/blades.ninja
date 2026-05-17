@@ -133,11 +133,7 @@
   {% endblock %}
   <footer class="container">
     <hr style="margin-block-start: 0">
-    <small><small>
-      Code licensed <a href="https://github.com/anyblades/blades/blob/main/LICENSE.md">MIT</a>,
-      docs <a href="https://github.com/anyblades/blades.ninja/blob/main/LICENSE.md">CC BY-SA 4.0</a>. &nbsp;
-      Currently <img src="https://img.shields.io/github/v/release/anyblades/blades?label=&color=white">
-    </small></small>
+    <small><small>{{ site.footer_contents | join(' ') | markdownify | safe }}</small></small>
     <br><br>
   </footer>
 {% endblock %}
