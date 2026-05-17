@@ -73,8 +73,7 @@
         </li>
         {% endfor %}
         <li class="faded">|</li>
-        <li><a href="https://github.com/anyblades/blades"><i class="fa-brands fa-github fa-lg"></i></a></li>
-        <li><a href="https://x.com/any_blades"><i class="fa-brands fa-x-twitter fa-lg"></i></a></li>
+        <li>{% renderFile './_includes/links.njk', { links: site.header_links } %}</li>
       </ul>
     </nav>
   </header>
