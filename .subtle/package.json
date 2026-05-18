@@ -15,6 +15,9 @@
   "dependencies": {
     "@anyblades/subtle": "^0.0.3"
   },
+  "workspaces": [
+    "packages/subtle"
+  ],
   "=== SITE GLOBALS": "===",
   "site": {
     "title": "Subtle",
@@ -29,8 +32,5 @@
   },
   "=== METADATA": "===",
   "author": "Anton Staroverov",
-  "license": "MIT",
-  "workspaces": [
-    "packages/subtle"
-  ]
+  "license": "MIT"
 }
