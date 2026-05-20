@@ -1,35 +1,30 @@
-import baseConfig from "@anyblades/eleventy-blades/base-config";
+import baseConfig from "@anyblades/eleventy-blades-base";
 import { readFileSync } from "node:fs";
-import yaml from "js-yaml";
 
 export default function (eleventyConfig) {
   baseConfig(eleventyConfig);
 
-  eleventyConfig.setIncludesDirectory("./.subtle/_includes/");
-  eleventyConfig.addPassthroughCopy({ "./.subtle/_public/": "." });
+  eleventyConfig.setIncludesDirectory("./.11ty/_includes/");
+  eleventyConfig.addPassthroughCopy({ "./.11ty/_public/": "." });
   eleventyConfig.addPassthroughCopy("../**/*.png");
-  eleventyConfig.addGlobalData("eleventyComputed.site", () => (data) => ({
-    ...data.pkg.site,
-    ...data.site,
-  }));
   eleventyConfig.addFilter("split", (str, sep) => str.split(sep));
 
   //TODO: move to 11ty-blades?
   for (const line of readFileSync("./.gitignore", "utf8").split("\n"))
     if (line && !line.startsWith("#"))
-      eleventyConfig.watchIgnores.add(`../.subtle/${line}`);
+      eleventyConfig.watchIgnores.add(`../.11ty/${line}`);
 
   // Virtual pages
   const pages = yaml.load(
-    readFileSync(eleventyConfig.directories.input + "pages.yml", "utf8"),
+    readFileSync(eleventyConfig.directories.input + "pages.yaml", "utf8"),
   );
   for (const [index, data] of pages.entries()) {
     const virtualSlug = data.permalink
       ? data.permalink + "index"
       : data.iframe
         ? data.iframe
-            ?.replace("https://picocss.com/", "/")
-            ?.replace("/docs/", "/css/")
+          ?.replace("https://picocss.com/", "/")
+          ?.replace("/docs/", "/css/")
         : index;
     if (data.iframe) {
       data.layout = "./iframe.njk";
