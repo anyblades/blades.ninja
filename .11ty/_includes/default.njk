@@ -1,3 +1,4 @@
+{% set site = pkg.site | merge(site) %}
 {% if not title and title != false %}{% set title = eleventyNavigation.key | remove_tag('mark') %}{% endif %}
 {% extends './blades/html.njk' %}
 

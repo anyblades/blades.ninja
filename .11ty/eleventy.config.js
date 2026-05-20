@@ -1,5 +1,6 @@
 import baseConfig from "@anyblades/eleventy-blades-base";
 import { readFileSync } from "node:fs";
+import YAML from "yaml";
 
 export default function (eleventyConfig) {
   baseConfig(eleventyConfig);
@@ -15,7 +16,7 @@ export default function (eleventyConfig) {
       eleventyConfig.watchIgnores.add(`../.11ty/${line}`);
 
   // Virtual pages
-  const pages = yaml.load(
+  const pages = YAML.parse(
     readFileSync(eleventyConfig.directories.input + "pages.yaml", "utf8"),
   );
   for (const [index, data] of pages.entries()) {
