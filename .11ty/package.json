@@ -5,9 +5,8 @@
   "scripts": {
     "start": "npm run build -- --serve",
     "stage": "rm -r ./_site/ || true && npm run build && serve ./_site/",
-    "build": "eleventy --input=../",
-    "11ty:start": "npm run 11ty:build -- --serve",
-    "11ty:build": "eleventy --input=../../11ty.blades.ninja/"
+    "build": "eleventy --input=${INPUT:-../}",
+    "start:docs": "INPUT=../../docs/ npm start"
   },
   "devDependencies": {
     "prettier-plugin-jinja-template": "^2.1.0",
