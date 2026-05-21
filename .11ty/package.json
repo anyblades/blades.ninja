@@ -33,12 +33,12 @@
     ],
     "header_links": [
       {
-        "url": "https://github.com/anyblades/blades.ninja",
-        "title": "<i class='fa-brands fa-markdown fa-lg faded'></i>"
-      },
-      {
         "url": "https://github.com/anyblades/blades",
         "title": "<i class='fa-brands fa-github fa-lg'></i>"
+      },
+      {
+        "url": "https://github.com/anyblades/blades.ninja",
+        "title": "<i class='fa-solid fa-laptop-code fa-lg faded'></i>"
       },
       {
         "url": "https://x.com/any_blades",
