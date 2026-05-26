@@ -1,10 +1,14 @@
 {
   "private": true,
   "name": "blades.ninja",
+  "license": "MIT",
   "type": "module",
+  "workspaces": [
+    "do"
+  ],
   "scripts": {
     "start": "npm run build -- --serve",
-    "stage": "rm -r ./_site/ || true && npm run build && serve ./_site/",
+    "stage": "rm -r ./_site || true && npm run build && serve ./_site/",
     "build": "eleventy --input=${INPUT:-../}",
     "start:docs": "INPUT=../../docs/ npm start"
   },
@@ -14,13 +18,18 @@
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "^5.1.2",
-    "@anyblades/eleventy-blades-base": "^0.2.1"
+    "@anyblades/eleventy-blades-base": "^0.4.2"
   },
-  "=== SITE GLOBALS": "===",
+  "=== SITE GLOBALS": "=== compatible with https://www.11ty.dev/docs/plugins/rss/#virtual-template",
   "site": {
     "base": "https://blades.ninja",
+    "language": "en",
     "title": "Blades",
     "brand": "🥷 <em>Bl</em>ades",
+    "subtitle": "Framework-agnostic, class-light CSS⁺ blade kit. Use with Pico, Simple, Tailwind, or any other CSS reset/framework.",
+    "author": {
+      "name": "Anton Staroverov"
+    },
     "styles": [
       "https://cdn.jsdelivr.net/npm/@anyblades/blades@0/assets/blades.min.css",
       "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7/css/all.min.css",
@@ -50,8 +59,5 @@
       "Currently <img src='https://img.shields.io/github/v/release/anyblades/blades?label=&color=white'>"
     ]
   },
-  "=== METADATA": "===",
-  "author": "Anton Staroverov",
-  "license": "MIT",
-  "description": "Framework-agnostic, class-light CSS⁺ blade kit. Use with Pico, Simple, Tailwind, or any other CSS reset/framework."
+  "=== UNSORTED": "==="
 }
