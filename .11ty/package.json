@@ -7,9 +7,10 @@
     "do"
   ],
   "scripts": {
-    "start": "npm run build -- --serve",
-    "stage": "rm -r ./_site || true && npm run build && serve ./_site/",
-    "build": "eleventy --input=${INPUT:-../}",
+    "do": "ELTY_OPTIONS=\"--input=${INPUT:-../}\" npm -w do run",
+    "start": "npm run do -- start",
+    "stage": "npm run do -- stage",
+    "build": "npm run do -- build",
     "start:docs": "INPUT=../../docs/ npm start"
   },
   "devDependencies": {
