@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "^5.1.2",
-    "@anyblades/eleventy-blades-base": "^0.4.4"
+    "@anyblades/eleventy-blades-base": "^0.4.5"
   },
   "=== SITE GLOBALS": "=== compatible with https://www.11ty.dev/docs/plugins/rss/#virtual-template",
   "site": {
