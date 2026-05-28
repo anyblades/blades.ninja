@@ -8,18 +8,19 @@
     "do"
   ],
   "scripts": {
-    "start": "npm run build -- --serve",
-    "stage": "rm -r ./_site || true && npm run build && serve ./_site/",
-    "build": "eleventy --input=../ --config=./node_modules/@anyblades/eleventy-blades-base/eleventy.config.js"
+    "do": "ELTY_OPTIONS='--input=../ --config=./node_modules/@anyblades/eleventy-blades-base/eleventy.config.js' npm -w do run",
+    "start": "npm run do -- start",
+    "stage": "npm run do -- stage",
+    "build": "npm run do -- build"
   },
   "devDependencies": {
     "prettier-plugin-jinja-template": "^2.1.0",
     "serve": "^14.2.5"
   },
   "dependencies": {
-    "@anyblades/eleventy-blades-base": "^0.4.2"
+    "@anyblades/eleventy-blades-base": "^0.4.5"
   },
-  "=== SITE GLOBALS": "=== compatible with https://www.11ty.dev/docs/plugins/rss/#virtual-template",
+  "=== SITE GLOBALS": "compatible with https://www.11ty.dev/docs/plugins/rss/#virtual-template",
   "site": {
     "base": "https://subtle.blades.ninja/",
     "language": "en",
