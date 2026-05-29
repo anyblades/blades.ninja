@@ -1,12 +1,10 @@
 ---
 permalink: /
-summary: Probably the most .subtle starter for content-first sites/blogs, yet customizable thanks to 11ty plugin, Pico and other Blades.
 ---
 
 # 🥷 *S*ubtle
 
-<big>Probably the most `.subtle` starter for content-first sites/blogs, <br class="opt">
-yet customizable thanks to [11ty plugin](https://github.com/anyblades/eleventy-blades), [Pico](https://github.com/anyblades/pico) and other [*Bl*ades](https://github.com/anyblades/blades).</big>
+<big>The most subtle Eleventy v4 micro-starter for content-first sites. Powered by the [Eleventy Blades plugin](https://11ty.blades.ninja/) and its [base sub-package](https://11ty.blades.ninja/base/).</big>
 
 ![](https://img.shields.io/github/v/release/anyblades/subtle?label=&color=darkslategray&style=for-the-badge)
 [![](https://img.shields.io/netlify/346efcff-c92c-4f1c-bf3c-047049fc6a8c?label=Demo&labelColor=darkslategray&style=for-the-badge)](https://subtle.blades.ninja/)
