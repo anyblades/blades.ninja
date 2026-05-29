@@ -95,7 +95,7 @@
       {% if brick.md %}
         {{ brick.md | markdownify | safe }}
       {% elif brick.tpl %}
-        {{ brick.tpl | renderContent('njk', { collections: collections }) | safe }}
+        {{ brick.tpl | renderContent('njk', { collections: collections, site: site }) | safe }}
       {% elif brick.path %}
         {% set _path = brick.path %}
         {% if not site.prod and '/anyblades/' in _path %}
