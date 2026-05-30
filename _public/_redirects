@@ -10,5 +10,8 @@
 # Jekyll subsite
 /jekyll/  https://jekyll.blades.ninja/ 301
 
+# Tricks
+/tricks/*   https://any.digital/:splat 301
+
 # The Catch-all: Redirects everything else
 /*  https://any.digital/:splat 301
