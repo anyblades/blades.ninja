@@ -21,13 +21,14 @@
     "@11ty/eleventy-fetch": "^5.1.2",
     "@anyblades/eleventy-blades-base": "^0.4.5"
   },
-  "=== SITE GLOBALS": "=== compatible with https://www.11ty.dev/docs/plugins/rss/#virtual-template",
+  "=== SITE GLOBALS": "compatible with https://www.11ty.dev/docs/plugins/rss/#virtual-template",
   "site": {
     "base": "https://blades.ninja",
     "language": "en",
     "title": "Blades",
     "brand": "🥷 <em>Bl</em>ades",
     "subtitle": "Framework-agnostic, class-light CSS⁺ blade kit. Use with Pico, Simple, Tailwind, or any other CSS reset/framework.",
+    "generator": "Subtle — The most subtle Eleventy v4 micro-starter for content-first sites",
     "author": {
       "name": "Anton Staroverov"
     },
