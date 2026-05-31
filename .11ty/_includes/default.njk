@@ -78,8 +78,8 @@
           {% endif %}
         </li>
         {% endfor %}
-        <li>{% renderFile './_includes/links.njk', { links: site.header_links } %}</li>
       </ul>
+      {% renderFile './_includes/links.njk', { links: site.header_links } %}
     </nav>
   </header>
   {% block main %}
