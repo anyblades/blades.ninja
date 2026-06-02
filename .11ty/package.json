@@ -11,7 +11,7 @@
     "start": "npm run do -- start",
     "stage": "npm run do -- stage",
     "build": "npm run do -- build",
-    "start:docs": "INPUT=../../docs/ npm start"
+    "start2": "INPUT=../../docs/ npm start"
   },
   "devDependencies": {
     "prettier-plugin-jinja-template": "^2.1.0",
@@ -24,6 +24,7 @@
   },
   "=== SITE GLOBALS": "compatible with https://www.11ty.dev/docs/plugins/rss/#virtual-template",
   "site": {
+    "favicon": "/favicon.ico",
     "base": "https://blades.ninja",
     "language": "en",
     "title": "Blades",
