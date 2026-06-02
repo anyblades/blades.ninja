@@ -5,20 +5,18 @@
   {{ content_for_header | safe }}
   <meta name="generator" content="{{ site.generator }}">
   <style>
-    body > :is(header, footer) {
-      padding-block: 2rem;
-      text-align: center;
-    }
+    /*TODO: move to blades.ninja.css */
     a[role="button"] {
       text-align: start;
       border-width: 1px 0 0 1px;
       margin: 0 0 0.5rem -1rem;
     }
-    /*TODO: move to blades-css */
+    /*TODO: move to blades.css */
     .breakout-all > img {
       min-width: auto !important;
     }
-    .opt { @media screen and (max-width: 767px) { display: none } }
+    /* Custom styles go below */
+    body > :is(header, footer) { padding-block: 2rem; text-align: center }
     .borderless {
       th { padding-block-end: 0 }
       pre { padding-block: 0; padding-inline-start: 0; margin: 0 }
@@ -32,8 +30,8 @@
     <a href="/blog/">Blog</a>
   </header>
   <main class="container breakout-all">
-    <h1>{{ title }}</h1>
-    <p><big>{{ description }}</big></p>
+    {% if title %}<h1>{{ title }}</h1>{% endif %}
+    {% if description %}<p><big>{{ description }}</big></p>{% endif %}
     {{ content | safe }}
   </main>
   <footer><hr>Footer</footer>
