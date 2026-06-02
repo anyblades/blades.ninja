@@ -1,5 +1,6 @@
 ---
 permalink: /
+eleventyNavigation: { key: Home, order: 1 }
 ---
 
 # 🥷 *S*ubtle
