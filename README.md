@@ -11,7 +11,7 @@ eleventyNavigation: { key: Home, order: 1 }
 [![](https://img.shields.io/github/stars/anyblades/subtle?label=Star&labelColor=gainsboro&color=silver&style=for-the-badge)](https://github.com/anyblades/subtle)
 
 <big>The most subtle Eleventy v4 [micro-starter](//11ty.blades.ninja/starters/) for content-first sites.</big>  
-Powered by [Eleventy Blades](//11ty.blades.ninja/)
+Powered by [Eleventy *Bl*ades](//11ty.blades.ninja/)
 
 ---
 
