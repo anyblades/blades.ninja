@@ -134,6 +134,9 @@
           {{ _fetched | markdownify | safe }}
         {% endif %}
       {% elif brick.content_here %}
+        {% if '{' in (brick.content_here | string) %}
+          {% set content = brick.content_here | renderContent('njk', { content: content }) %}
+        {% endif %}
         {{ content | safe }}
         {% set content_here = true %}
       {% endif %}
