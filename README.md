@@ -15,9 +15,9 @@ Powered by [Eleventy *Bl*ades](//11ty.blades.ninja/)
 
 ---
 
-By [literally] hiding inside `.11ty` subfolder, it declutters the project root for your content.
+## Feel the difference
 
-Feel the difference:
+By [literally] hiding inside `.11ty` subfolder, it declutters the project root for your content:
 
 <table class="borderless">
 <tr>
@@ -64,9 +64,9 @@ Feel the difference:
 
 ---
 
-Local development is as simple as:
+## Local development
 
-```sh
+```sh {data-caption="As simple as:"}
 cd .11ty/
 npm install    # dependencies
 npm start      # development
