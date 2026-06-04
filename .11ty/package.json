@@ -11,7 +11,10 @@
     "start": "npm run do -- start",
     "stage": "npm run do -- stage",
     "build": "npm run do -- build",
-    "start2": "INPUT=../../docs/ npm start"
+    "do2": "clear; ELTY_OPTIONS=\"--input=${INPUT:-../../docs/}\" npm -w do run",
+    "start2": "npm run do2 -- start",
+    "stage2": "npm run do2 -- stage",
+    "build2": "npm run do2 -- build"
   },
   "devDependencies": {
     "prettier-plugin-jinja-template": "^2.1.0",
