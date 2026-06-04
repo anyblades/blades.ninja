@@ -54,11 +54,11 @@
       },
       {
         "url": "https://11ty.blades.ninja/",
-        "title": "<i class='fa-brands fa-eleventy fa-lg faded'></i>"
+        "title": "<i class='fa-brands fa-eleventy fa-sm faded'></i>"
       },
       {
         "url": "https://github.com/anyblades/blades.ninja",
-        "title": "<i class='fa-solid fa-laptop-code fa-lg faded'></i>"
+        "title": "<i class='fa-solid fa-laptop-code fa-sm faded'></i>"
       }
     ],
     "footer_contents": [
