@@ -27,7 +27,7 @@
     "favicon": "/favicon.ico",
     "base": "https://blades.ninja",
     "language": "en",
-    "title": "Blades",
+    "title": "Blades CSS",
     "brand": "🥷 <em>Bl</em>ades",
     "subtitle": "Framework-agnostic, class-light CSS⁺ blade kit. Use with Pico, Simple, Tailwind, or any other CSS reset/framework.",
     "generator": "Subtle — The most subtle Eleventy v4 micro-starter for content-first sites",
