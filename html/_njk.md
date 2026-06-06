@@ -5,7 +5,7 @@
 
 ##### Syntax highlighting <sub>in [VS Code~editors](/tricks/antigravity/)</sub> {#njk-vscode}
 
-- 🧩 Install https://github.com/edheltzel/better-nunjucks-for-visual-studio-code
+- 🧩 Install https://github.com/edheltzel/better-nunjucks-for-visual-studio-code and (!) set it as default formatter
 
 This is a modern fork of the original extension. It is specifically designed to solve the "11ty problem" where you mix Nunjucks and HTML.
 
