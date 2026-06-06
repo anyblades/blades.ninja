@@ -4,8 +4,8 @@ site:
   inline_styles:
     - |-
       a:has(> i) em { opacity: 50%; font-style: normal }
-      article:has(> footer) > a { text-decoration: none; font-size: larger }
-      article > footer { font-size: smaller }
+      article:has(> header) { background: none; font-size: smaller }
+      article header a { text-decoration: none; font-size: xx-large }
 
 === CONTENT: ===
 eleventyComputed:
@@ -48,27 +48,31 @@ bricks:
 
 <hr>
 
-<h2 id="trusted"><sup>Trusted by</sup></h2>
+<h2 id="trusted"><sup>Trusted by</sup></h2><br>
 
-<div class="grid">
+<div class="grid breakout-item-max" style="padding-inline: 1rem">
   <article>
-    <a href="https://palletsprojects.com/">
-      <i><img src="https://palletsprojects.com/static/content/projects/flask-logo.svg"></i> Flask
-      <i class="faded">&&nbsp;</i>
-      <i><img src="https://palletsprojects.com/static/content/projects/jinja-logo.svg"></i> Jinja
-    </a>
-    <footer>Powers their community <a href="https://github.com/pallets/website">website</a></footer>
+    <header>
+      <a href="https://palletsprojects.com/">
+        <i><img src="https://palletsprojects.com/static/content/projects/flask-logo.svg"></i> Flask
+        <i class="faded">&&nbsp;</i>
+        <i><img src="https://palletsprojects.com/static/content/projects/jinja-logo.svg"></i> Jinja
+      </a>
+    </header>
+    Powers their community <a href="//github.com/pallets/website">website</a>
   </article>
   <article>
-    <a href="https://getgrav.org/">
-      Grav CMS <em>v2</em>
-    </a>
-    <footer>Powers new default <a href="https://github.com/getgrav/grav-theme-quark2">Quark 2</a> theme</footer>
+    <header>
+      <a href="https://getgrav.org/">Grav CMS <em>v2</em></a>
+    </header>
+    Powers new default <a href="//github.com/getgrav/grav-theme-quark2">Quark 2</a> theme
   </article>
   <article>
-    <a href="https://hostfurl.com/">
-      <i class="dark-auto"><img src="https://hostfurl.com/favicon.svg"></i> Hostfurl
-    </a>
-    <footer>Powers <a href="https://github.com/johnheenan/minform#css-and-performance">Minform</a> starter template</footer>
+    <header>
+      <a href="https://hostfurl.com/">
+        <i class="dark-auto"><img src="https://hostfurl.com/favicon.svg"></i> Hostfurl
+      </a>
+    </header>
+    Powers <a href="//github.com/johnheenan/minform#css-and-performance">Minform</a> starter template
   </article>
 </div>
