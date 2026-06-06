@@ -5,7 +5,7 @@ site:
     - |-
       a:has(> i) em { opacity: 50%; font-style: normal }
       article:has(> header) { background: none; font-size: smaller; border: 2px solid var(--pico-card-sectioning-background-color) }
-      article header a { text-decoration: none; font-size: xx-large; color: var(--pico-contrast) }
+      article header a { text-decoration: none; font-size: large; font-weight: 600; color: var(--pico-contrast) }
 
 === CONTENT: ===
 eleventyComputed:
@@ -50,22 +50,34 @@ bricks:
 
 <h2 id="trusted"><sup>Trusted by</sup></h2><br>
 
-<div class="grid breakout-item-max" style="padding-inline: 1rem">
+<div class="grid breakout-item-max" style="row-gap: 0; width: min(150%, 100dvw) !important; max-width: none">
   <article>
     <header>
       <a href="https://palletsprojects.com/">
         <i><img src="https://palletsprojects.com/static/content/projects/flask-logo.svg"></i> Flask
-        <i class="faded">&&nbsp;</i>
+        <i class="faded"><small>&</small></i>
         <i><img src="https://palletsprojects.com/static/content/projects/jinja-logo.svg"></i> Jinja
       </a>
     </header>
-    Powers their community <a href="//github.com/pallets/website">website</a>
+    Powering their community <a href="//github.com/pallets/website">website</a>
+  </article>
+  <article>
+    <header>
+      <a href="https://www.11ty.dev/">Eleventy</a>
+    </header>
+    Powering multiple starter <a href="//www.11ty.dev/docs/starter/#:~:text=blades">templates</a>
   </article>
   <article>
     <header>
       <a href="https://getgrav.org/">Grav CMS <em>v2</em></a>
     </header>
-    Powers new default <a href="//github.com/getgrav/grav-theme-quark2">Quark 2</a> theme
+    Powering new default <a href="//github.com/getgrav/grav-theme-quark2">Quark&nbsp;2</a> theme
+  </article>
+  <article>
+    <header>
+      <a href="https://sveltiacms.app/">Sveltia CMS</a>
+    </header>
+    Powering multiple starter <a href="//sveltiacms.app/en/docs/start#starter-templates:~:text=anyblades">templates</a>
   </article>
   <article>
     <header>
@@ -73,6 +85,6 @@ bricks:
         <i class="dark-auto"><img src="https://hostfurl.com/favicon.svg"></i> Hostfurl
       </a>
     </header>
-    Powers <a href="//github.com/johnheenan/minform#css-and-performance">Minform</a> starter template
+    Powering <a href="//github.com/johnheenan/minform#css-and-performance">Minform</a> starter template
   </article>
 </div>
