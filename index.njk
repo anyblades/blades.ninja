@@ -1,12 +1,19 @@
 ---
 permalink: /
+site:
+  inline_styles:
+    - |-
+      a:has(> i) em { opacity: 50%; font-style: normal }
+      article:has(> footer) > a { text-decoration: none; font-size: larger }
+      article > footer { font-size: smaller }
+
+=== CONTENT: ===
 eleventyComputed:
   #TODO: add to tricks
   description: |-
     {{ ('https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md' if site.prod else '../../blades/README.md')
       | fetch | section('summary') | markdownify | safe }}
   title: "Blades • {{ description | split('</h1>') | first | striptags }}"
-
 bricks:
   - content_here: true
   - md: |-
@@ -38,3 +45,30 @@ bricks:
     </p>
   </nav>
 </section>
+
+<hr>
+
+<h2 id="trusted"><sup>Trusted by</sup></h2>
+
+<div class="grid">
+  <article>
+    <a href="https://palletsprojects.com/">
+      <i><img src="https://palletsprojects.com/static/content/projects/flask-logo.svg"></i> Flask
+      <i class="faded">&&nbsp;</i>
+      <i><img src="https://palletsprojects.com/static/content/projects/jinja-logo.svg"></i> Jinja
+    </a>
+    <footer>Powers their community <a href="https://github.com/pallets/website">website</a></footer>
+  </article>
+  <article>
+    <a href="https://getgrav.org/">
+      Grav CMS <em>v2</em>
+    </a>
+    <footer>Powers new default <a href="https://github.com/getgrav/grav-theme-quark2">Quark 2</a> theme</footer>
+  </article>
+  <article>
+    <a href="https://hostfurl.com/">
+      <i class="dark-auto"><img src="https://hostfurl.com/favicon.svg"></i> Hostfurl
+    </a>
+    <footer>Powers <a href="https://github.com/johnheenan/minform#css-and-performance">Minform</a> starter template</footer>
+  </article>
+</div>
