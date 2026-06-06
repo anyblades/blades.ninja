@@ -47,7 +47,7 @@ bricks:
 <!--section:trusted-11ty-->
 <hr>
 <h2 id="trusted"><sup>Trusted by</sup></h2><br>
-<div class="grid breakout-item-max" style="row-gap: 0; width: min(150%, 100dvw) !important; max-width: none; padding-inline: 1rem">
+<div class="grid breakout-item-max">
   <!--section:SKIP-->
   <article>
     <header>
@@ -70,27 +70,27 @@ bricks:
   <!--section:trusted-11ty-->
   <article>
     <header>
+      <a href="https://hostfurl.com/">
+        <i class="dark-auto"><img src="https://hostfurl.com/favicon.svg"></i> Hostfurl
+      </a>
+    </header>
+    Powering <a href="//github.com/hostfurl/minformhf">Minformhf</a> template
+  </article>
+  <article>
+    <header>
       <a href="https://www.11ty.dev/">Eleventy</a>
     </header>
-    Powering multiple starter <a href="//www.11ty.dev/docs/starter/#:~:text=blades">templates</a>
+    Providing multiple starter <a href="//www.11ty.dev/docs/starter/#:~:text=blades">templates</a>
   </article>
   <article>
     <header>
       <a href="https://sveltiacms.app/">Sveltia CMS</a>
     </header>
-    Powering multiple starter <a href="//sveltiacms.app/en/docs/start#starter-templates:~:text=anyblades">templates</a>
-  </article>
-  <article>
-    <header>
-      <a href="https://hostfurl.com/">
-        <i class="dark-auto"><img src="https://hostfurl.com/favicon.svg"></i> Hostfurl
-      </a>
-    </header>
-    Powering <a href="//github.com/johnheenan/minform#css-and-performance">Minform</a>
-		and <a href="//github.com/hostfurl/minformhf">Minformhf</a>
+    Providing multiple starter <a href="//sveltiacms.app/en/docs/start#starter-templates:~:text=anyblades">templates</a>
   </article>
 </div>
 <style>
+  .grid:has(article) { padding-inline: 1rem; gap: 2px }
   article:has(> header) { background: none; font-size: smaller; border: 2px solid var(--pico-card-sectioning-background-color) }
   article header a { text-decoration: none; font-size: large; font-weight: 600; color: var(--pico-contrast) }
 </style>
