@@ -67,7 +67,7 @@
     "footer_contents": [
       "Code licensed [MIT](//github.com/anyblades/blades/blob/main/LICENSE.md),",
       "docs [CC BY-SA 4.0](//github.com/anyblades/blades.ninja/blob/main/LICENSE.md). &nbsp;",
-      "Currently ![](https://img.shields.io/npm/v/@anyblades/blades?label=)"
+      "Currently ![](https://img.shields.io/npm/v/@anyblades/blades?label=&color=white)"
     ]
   },
   "===": "==="
