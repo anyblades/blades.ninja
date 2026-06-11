@@ -4,12 +4,15 @@
 https://blades.ninja/css/navigation/     	 /css/nav/                       	 301
 
 ### GS: NOT FOUND                        	                                 	 https://search.google.com/u/0/search-console/index/drilldown?resource_id=sc-domain%3Ablades.ninja&item_key=CAMYDSAC
+# https://blades.ninja/docs/classless
 # https://blades.ninja/examples/
-https://blades.ninja/css/forms/*         	 /css/:splat                     	 301
+https://blades.ninja/css/forms/overview/ 	 /css/forms/                     	 301
 https://blades.ninja/css/table-helpers/  	 /css/table/                     	 301
-https://blades.ninja/docs/*              	 /css/:splat                     	 301
 https://blades.ninja/ruby/               	 https://any.digital/tech/ruby/  	 301
 https://blades.ninja/xcode/              	 https://any.digital/tech/ios/   	 301
+# *
+https://blades.ninja/css/forms/*         	 /css/:splat                     	 301
+https://blades.ninja/docs/*              	 /css/:splat                     	 301
 
 ### 11TY
 https://blades.ninja/11ty/*              	 https://11ty.blades.ninja/:splat	 301
@@ -17,6 +20,7 @@ https://blades.ninja/build-awesome-11ty/*	 https://11ty.blades.ninja/:splat	 301
 
 ### SERVED
 https://blades.ninja/                    	 /                               	 200
+# *
 https://blades.ninja/css/*               	 /css/:splat                     	 200
 https://blades.ninja/html/*              	 /html/:splat                    	 200
 
