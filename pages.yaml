@@ -234,7 +234,7 @@
     parent: Components
     key: Modal
     order: 5
-- permalink: /css/navigation/
+- permalink: /css/nav/
   eleventyNavigation:
     parent: Components
     key: Navigation
