@@ -1,17 +1,13 @@
-# Serve normally
-/                                         	 /                               	 200
-/css/*                                    	 /css/:splat                     	 200
-/html/*                                   	 /html/:splat                    	 200
+### Each GROUP sorted A-Z
 
-# 11ty subsite
-/build-awesome-11ty/*                     	 https://11ty.blades.ninja/:splat	 301
-/11ty/*                                   	 https://11ty.blades.ninja/:splat	 301
+### SERVED
+https://blades.ninja/                    	 /                               	 200
+https://blades.ninja/css/*               	 /css/:splat                     	 200
+https://blades.ninja/html/*              	 /html/:splat                    	 200
 
-# Jekyll subsite
-/jekyll/                                  	 https://jekyll.blades.ninja/    	 301
+### 11TY
+https://blades.ninja/11ty/*              	 https://11ty.blades.ninja/:splat	 301
+https://blades.ninja/build-awesome-11ty/*	 https://11ty.blades.ninja/:splat	 301
 
-# Tricks
-/tricks/*                                 	 https://any.digital/:splat      	 301
-
-# The Catch-all: Redirects everything else
-/*                                        	 https://any.digital/:splat      	 301
+### CATCH-ALL ELSE
+https://blades.ninja/*                   	 https://any.digital/:splat      	 301
