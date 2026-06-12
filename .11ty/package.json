@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "^5.1.2",
-    "@anyblades/eleventy-blades-base": "^1.0.2",
+    "@anyblades/eleventy-blades-base": "^1.1.0",
     "markdown-it-deflist": "^3.0.1"
   },
   "=== SITE GLOBALS": "compatible with https://www.11ty.dev/docs/plugins/rss/#virtual-template",
