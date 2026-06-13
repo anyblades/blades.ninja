@@ -11,9 +11,6 @@ export default async function (eleventyConfig) {
   const pages = YAML.parse(readFileSync(eleventyConfig.directories.input + "pages.yaml", "utf8"));
   for (const [index, data] of pages.entries()) {
     const virtualSlug = data.permalink ? data.permalink + "index" : index;
-    if (data.iframe) {
-      data.layout = "./iframe.njk";
-    }
     // console.log(data, virtualSlug);
     eleventyConfig.addTemplate("." + virtualSlug + ".md", "", data);
   }

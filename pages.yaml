@@ -15,6 +15,7 @@
       section: install
 - permalink: /css/color-schemes/
   iframe: https://picocss.com/docs/color-schemes
+  layout: ./iframe.njk
   eleventyNavigation:
     parent: Get started
     key: Color schemes
@@ -48,6 +49,7 @@
     - path: https://picocss.com/docs/landmarks-section
 - permalink: /css/grid/
   iframe: https://picocss.com/docs/grid
+  layout: ./iframe.njk
   eleventyNavigation:
     parent: Layout
     key: Grid
@@ -75,6 +77,7 @@
     order: 2
 - permalink: /css/typography/
   iframe: https://picocss.com/docs/typography
+  layout: ./iframe.njk
   eleventyNavigation:
     parent: Content
     key: Typography
@@ -234,6 +237,7 @@
     - path: https://picocss.com/docs/loading
 - permalink: /css/modal/
   iframe: https://picocss.com/docs/modal
+  layout: ./iframe.njk
   eleventyNavigation:
     parent: Components
     key: Modal
@@ -247,6 +251,7 @@
     - path: https://picocss.com/docs/nav
 - permalink: /css/progress/
   iframe: https://picocss.com/docs/progress
+  layout: ./iframe.njk
   eleventyNavigation:
     parent: Components
     key: Progress
