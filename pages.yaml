@@ -13,7 +13,8 @@
   bricks:
     - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md
       section: install
-- iframe: https://picocss.com/docs/color-schemes
+- permalink: /css/color-schemes/
+  iframe: https://picocss.com/docs/color-schemes
   eleventyNavigation:
     parent: Get started
     key: Color schemes
@@ -45,7 +46,8 @@
     order: 2
   bricks:
     - path: https://picocss.com/docs/landmarks-section
-- iframe: https://picocss.com/docs/grid
+- permalink: /css/grid/
+  iframe: https://picocss.com/docs/grid
   eleventyNavigation:
     parent: Layout
     key: Grid
@@ -71,7 +73,8 @@
   eleventyNavigation:
     key: Content
     order: 2
-- iframe: https://picocss.com/docs/typography
+- permalink: /css/typography/
+  iframe: https://picocss.com/docs/typography
   eleventyNavigation:
     parent: Content
     key: Typography
@@ -229,7 +232,8 @@
     order: 4
   bricks:
     - path: https://picocss.com/docs/loading
-- iframe: https://picocss.com/docs/modal
+- permalink: /css/modal/
+  iframe: https://picocss.com/docs/modal
   eleventyNavigation:
     parent: Components
     key: Modal
@@ -241,7 +245,8 @@
     order: 6
   bricks:
     - path: https://picocss.com/docs/nav
-- iframe: https://picocss.com/docs/progress
+- permalink: /css/progress/
+  iframe: https://picocss.com/docs/progress
   eleventyNavigation:
     parent: Components
     key: Progress

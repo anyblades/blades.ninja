@@ -8,17 +8,9 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter("split", (str, sep) => str.split(sep));
 
   // Virtual pages
-  const pages = YAML.parse(
-    readFileSync(eleventyConfig.directories.input + "pages.yaml", "utf8"),
-  );
+  const pages = YAML.parse(readFileSync(eleventyConfig.directories.input + "pages.yaml", "utf8"));
   for (const [index, data] of pages.entries()) {
-    const virtualSlug = data.permalink
-      ? data.permalink + "index"
-      : data.iframe
-        ? data.iframe
-          ?.replace("https://picocss.com/", "/")
-          ?.replace("/docs/", "/css/")
-        : index;
+    const virtualSlug = data.permalink ? data.permalink + "index" : index;
     if (data.iframe) {
       data.layout = "./iframe.njk";
     }
