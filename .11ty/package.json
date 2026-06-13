@@ -21,6 +21,7 @@
     "serve": "^14.2.5"
   },
   "dependencies": {
+    "@11ty/eleventy": "^4.0.0-alpha.7",
     "@11ty/eleventy-fetch": "^5.1.2",
     "@anyblades/eleventy-blades-base": "^1.1.1",
     "markdown-it-deflist": "^3.0.1"
