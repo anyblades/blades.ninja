@@ -3,7 +3,7 @@
 - https://mozilla.github.io/nunjucks/templating.html
 - https://mozilla.github.io/nunjucks/templating.html#builtin-filters
 
-##### Syntax highlighting <sub>in [VS Code~editors](/tricks/antigravity/)</sub> {#njk-vscode}
+##### Syntax highlighting {#njk-vscode}
 
 - 🧩 Install https://github.com/edheltzel/better-nunjucks-for-visual-studio-code and (!) set it as default formatter
 
@@ -13,7 +13,7 @@ This is a modern fork of the original extension. It is specifically designed to 
 
 **No Config:** It works out of the box without needing to manually map file associations in your settings.
 
-##### Auto-formatting <sub>in [VS Code~editors](/tricks/antigravity/)</sub>
+##### Auto-formatting
 
 1. 🧩 Install https://github.com/prettier/prettier-vscode (if not yet)
 

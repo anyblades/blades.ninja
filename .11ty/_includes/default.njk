@@ -24,24 +24,11 @@
         @media(width >= 768px) { justify-content: center }
       }
     }
-    h1 { text-wrap: balance }
-    *:is(h1, h2) sup {
-      font-size: 13px; display: block;
-      letter-spacing: .0625em; text-transform: uppercase;
-    }
     h1 sup { color: #8b4f00 }
     *:is(h1, h2, h3) mark {
       background: linear-gradient(to right, rgb(215.4, 140.8, 210.2), rgb(184.5, 153, 237.75), rgb(156.6, 165.3, 232.6), rgb(142.75, 168.95, 240.05));
       background-clip: text; color: transparent;
       padding: 0;
-    }
-    *:is(h1, td) sub {
-      display: block; line-height: 1.1;
-      bottom: 0; /* vertical-align: top; */
-      font-weight: 300; opacity: 75%;
-    }
-    h1 sub {
-      font-size: 50%;
     }
     *:is(a, summary) mark {
       font-size: 12px; vertical-align: text-bottom;
@@ -97,7 +84,7 @@
   <main class="container breakout-all">
     {% if page.url != '/' %}
       <h1>
-        {% if eleventyNavigation.parent %}<sup>{{ eleventyNavigation.parent | safe }}</sup>{% endif %}
+        {% if eleventyNavigation.parent %}<sup style>{{ eleventyNavigation.parent | safe }}</sup>{% endif %}
         {% if title %}{% include './h1.njk' %}{% endif %}
       </h1>
       {% if description %}<big>{{ description | markdownify | safe }}</big>{% endif %}

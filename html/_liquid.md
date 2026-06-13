@@ -3,7 +3,7 @@
 - https://shopify.github.io/liquid/basics/introduction/
 - https://shopify.github.io/liquid/#filters-section
 
-##### Syntax highlighting & auto-formatting <sub>in [VS Code~editors](/tricks/antigravity/)</sub> {#liquid-vscode}
+##### Syntax highlighting & auto-formatting {#liquid-vscode}
 
 1. 🧩 Install https://github.com/prettier/prettier-vscode (if not yet)
 2. 🧩 Install https://shopify.dev/docs/storefronts/themes/tools/shopify-liquid-vscode  
