@@ -13,18 +13,26 @@
   bricks:
     - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md
       section: install
+- permalink: /css/ninja/
+  eleventyNavigation:
+    parent: Get started
+    key: Ninja add-ons <mark>NEW</mark>
+    order: 2
+  bricks:
+    - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/blades.ninja.css
+      section: docs
 - permalink: /css/color-schemes/
   iframe: https://picocss.com/docs/color-schemes
   layout: ./iframe.njk
   eleventyNavigation:
     parent: Get started
     key: Color schemes
-    order: 1
+    order: 3
 - permalink: /css/variables/
   eleventyNavigation:
     parent: Get started
     key: CSS variables
-    order: 2
+    order: 4
   bricks:
     - path: https://picocss.com/docs/css-variables
 
