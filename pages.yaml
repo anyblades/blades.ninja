@@ -263,11 +263,19 @@
     order: 8
   bricks:
     - path: https://picocss.com/docs/tooltip
+- permalink: /css/timeline/
+  eleventyNavigation:
+    parent: Components
+    key: Timeline <mark>NEW</mark>
+    order: 9
+  bricks:
+    - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/components/_timeline.css
+      sections: [docs, code]
 - permalink: /css/jump/
   eleventyNavigation:
     parent: Components
     key: Jump to... <mark>NEW</mark>
-    order: 9
+    order: 10
   bricks:
     - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/_layout.css
       section: jump
@@ -275,7 +283,7 @@
   eleventyNavigation:
     parent: Components
     key: Utilities <mark>NEW</mark>
-    order: 10
+    order: 11
   bricks:
     - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/_utilities.css
       section: docs
