@@ -7,11 +7,11 @@
     "do"
   ],
   "scripts": {
-    "do": "clear; ELTY_OPTIONS=\"--input=${INPUT:-../}\" npm -w do run",
+    "do": "clear; ELTY_OPTIONS=\"--input=${IN:-../} --config=./node_modules/@anyblades/eleventy-blades-base/eleventy.config.js\" npm -w do run",
     "start": "npm run do -- start",
     "stage": "npm run do -- stage",
     "build": "npm run do -- build",
-    "do2": "clear; ELTY_OPTIONS=\"--input=${INPUT:-../../docs/}\" npm -w do run",
+    "do2": "IN=../../docs/ npm run do",
     "start2": "npm run do2 -- start",
     "stage2": "npm run do2 -- stage",
     "build2": "npm run do2 -- build"
