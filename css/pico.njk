@@ -3,13 +3,10 @@ eleventyNavigation:
   parent: Get started
   key: Pico fork <img src="https://img.shields.io/github/v/release/anyblades/pico?label=&color=white"> <mark>NEW</mark>
   order: 4
-title: Pico fork <mark>+ Blades</mark>
-description: https://github.com/anyblades/pico + https://github.com/anyblades/blades standalone
-# eleventyComputed:
-#   summary: |-
-#     {{ 'https://raw.githubusercontent.com/anyblades/pico/refs/heads/main/README.md'
-#      | if: site.prod | default: '../../pico/README.md' | fetch | section: 'summary' | markdownify }}
 
+=== CONTENT: ===
+title: Pico CSS ✨ <mark>fork</mark>
+description: https://github.com/anyblades/pico
 bricks:
   - path: https://raw.githubusercontent.com/anyblades/pico/refs/heads/main/README.md
     section: docs
@@ -22,5 +19,5 @@ bricks:
   | fetch | section('install')
   | replace('/blades/archive/', '/pico/archive/')
   | replace('@anyblades/blades@', '@anyblades/pico@')
-  | replace('assets/blades.', 'css/pico.blades.')
+  | replace('css/blades.', 'css/pico.blades.')
   | markdownify | safe }}
