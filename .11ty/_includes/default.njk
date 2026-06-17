@@ -1,5 +1,6 @@
-{% if not title and title != false %}{% set title = eleventyNavigation.key | remove_tag('mark') %}{% endif %}
 {% extends './blades/html.njk' %}
+
+{% if not title and title != false %}{% set title = eleventyNavigation.key | remove_tag('mark') %}{% endif %}
 
 {% set content_for_header %}
   {{ content_for_header | safe }}
@@ -36,6 +37,7 @@
     }
     .fa-tailwind-css  { color: deepskyblue }
     .fa-bootstrap     { color: blueviolet }
+    {% getBundle 'css' %}
   </style>
 {% endset %}
 
