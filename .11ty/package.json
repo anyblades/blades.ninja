@@ -39,8 +39,8 @@
       "name": "Anton Staroverov"
     },
     "styles": [
-      "/blades.css",
-      "/blades.ninja.css",
+      "https://cdn.jsdelivr.net/npm/@anyblades/blades@2/css/blades.css",
+      "https://cdn.jsdelivr.net/npm/@anyblades/blades@2/css/blades.ninja.css",
       "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7/css/all.min.css",
       "https://cdn.jsdelivr.net/npm/prismjs@1/themes/prism-okaidia.min.css"
     ],
