@@ -314,13 +314,22 @@
     - md: ---
     - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/_includes/blades/html.liquid
       sections: [docs, code]
+    - md: ---
+    - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/_includes/blades/html.twig
+      sections: [docs, code]
 - permalink: /html/links/
   eleventyNavigation:
     parent: Templates <mark>NEW</mark>
     key: Links <mark>NEW</mark>
     order: 1
   bricks:
+    - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/_includes/blades/links.njk
+      sections: [docs, code]
+    - md: ---
     - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/_includes/blades/links.liquid
+      sections: [docs, code]
+    - md: ---
+    - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/_includes/blades/links.twig
       sections: [docs, code]
 - permalink: /html/sitemap/
   eleventyNavigation:
@@ -329,4 +338,6 @@
     order: 2
   bricks:
     - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/_includes/blades/sitemap.xml.njk
+      sections: [docs, code]
+    - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/_includes/blades/sitemap.xml.twig
       sections: [docs, code]
