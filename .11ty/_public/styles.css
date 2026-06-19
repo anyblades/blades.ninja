@@ -1,14 +1,44 @@
-header nav {
+body > header nav {
   --pico-primary: var(--pico-contrast);
   align-items: center;
   justify-content: end;
+
   > :first-child {
+    padding-right: 1rem;
     margin-inline-end: auto;
   }
   big a {
     text-decoration: none;
     font-weight: bold;
     font-size: larger;
+  }
+  li.nav-docs {
+    text-wrap: balance;
+    text-align: end;
+
+    &::before {
+      display: none;
+    }
+    > *:not(:first-child) {
+      margin-inline-start: 0.5rem;
+
+      @media (width < 1024px) {
+        display: none;
+      }
+    }
+    summary {
+      padding-block-end: 0;
+
+      &::after {
+        display: none;
+      }
+      &:not(:hover) {
+        text-decoration: underline dashed var(--pico-secondary-focus);
+      }
+    }
+    ul {
+      text-align: start;
+    }
   }
 }
 body > main {
