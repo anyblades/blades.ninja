@@ -8,40 +8,7 @@
 
 {% set content_for_header %}
   <meta name="generator" content="{{ site.generator }}">
-  <style>
-    header nav {
-      --pico-primary: var(--pico-contrast);
-      align-items: center; justify-content: end;
-      > :first-child { margin-inline-end: auto }
-      big a { text-decoration: none; font-weight: bold; font-size: larger; }
-    }
-    body > main { padding-block-start: 2rem }
-    .hero {
-      display: flex; flex-direction: column; text-wrap: balance;
-      @media(width >= 768px) {
-        justify-content: center; text-align: center;
-        min-height: calc(100dvh - 200px);
-      }
-
-      nav {
-        gap: 1rem; margin-block-start: 3rem; justify-content: normal;
-        @media(width >= 768px) { justify-content: center }
-      }
-    }
-    h1 sup { color: #8b4f00 }
-    *:is(h1, h2, h3) mark {
-      background: linear-gradient(to right, rgb(215.4, 140.8, 210.2), rgb(184.5, 153, 237.75), rgb(156.6, 165.3, 232.6), rgb(142.75, 168.95, 240.05));
-      background-clip: text; color: transparent;
-      padding: 0;
-    }
-    *:is(a, summary) mark {
-      font-size: 12px; vertical-align: text-bottom;
-      font-weight: 600; border-radius: .125rem;
-    }
-    .fa-tailwind-css  { color: deepskyblue }
-    .fa-bootstrap     { color: blueviolet }
-    {% getBundle 'css' %}
-  </style>
+  <style>{% getBundle 'css' %}</style>
 {% endset %}
 
 {% block body %}
