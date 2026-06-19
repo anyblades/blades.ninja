@@ -28,7 +28,6 @@
   },
   "=== SITE GLOBALS": "compatible with https://www.11ty.dev/docs/plugins/rss/#virtual-template",
   "site": {
-    "favicon": "/favicon.ico",
     "base": "https://blades.ninja",
     "language": "en",
     "title": "Blades CSS",
