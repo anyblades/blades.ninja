@@ -62,9 +62,12 @@
         {% set _fetched = _path | fetch %}
         {% if brick.section or brick.sections %}
           {% for _section in brick.sections | d([brick.section]) %}
-            {% set _ = _fetched | section(_section) | replace('/*```', '```') | replace('//```', '```') | replace('```\n*/', '```') | markdownify %}
-            {% if _section == 'code' %}<br><details class="breakout-item" {{ 'open' if _ | length < 500 }}><summary role="button" class="outline">How it works</summary>{% endif %}
-            {{ _ | safe }}
+            {% set _ = _fetched | section(_section) | replace('/*```', '```') | replace('//```', '```') | replace('```\n*/', '```') %}
+            {% if _section == 'code' %}
+              <br><details class="breakout-item" {{ 'open' if _ | length < 500 }}><summary role="button" class="outline">How it works</summary>
+              {% set _ = _ ~ '> ' ~ brick.path %}
+            {% endif %}
+            {{ _ | markdownify | safe }}
             {% if _section == 'code' %}</details>{% endif %}
           {% endfor %}
         {% elif 'https://picocss.com/' in brick.path %}
