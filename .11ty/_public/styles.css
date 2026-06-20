@@ -12,7 +12,7 @@ body > header nav {
       text-decoration: none;
       font-weight: bold;
       font-size: larger;
-      align-items: center;
+      align-items: baseline;
     }
   }
   li.nav-docs {
