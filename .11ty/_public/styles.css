@@ -64,8 +64,8 @@ body > main {
     @media (width >= 768px) {
       justify-content: center;
     }
-    [role="button"] {
-      padding: 0.5em 1em;
+    a {
+      align-items: center;
     }
   }
 }
