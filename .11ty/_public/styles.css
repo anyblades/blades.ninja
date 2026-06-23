@@ -98,3 +98,10 @@ h1 sup {
     color: blueviolet;
   }
 }
+
+/* Beautify markup fetched from https://picocss.com/ */
+:is(h1, h2, h3, h4, h5, h6) > a[id], /*TODO: via blades */
+.code > a.copy-to-clipboard,
+a:has(svg.icon-edit) {
+  display: none;
+}
