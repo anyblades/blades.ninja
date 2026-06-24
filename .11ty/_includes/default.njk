@@ -65,7 +65,7 @@
             {% set _ = _fetched | section(_section) | replace('/*```', '```') | replace('//```', '```') | replace('{'~'#```', '```') | replace('```\n*/', '```') %}
             {% if _section == 'code' %}
               <br><details class="breakout-item" {{ 'open' if _ | length < 500 }}><summary role="button" class="outline">How it works</summary>
-              {% set _ = _ ~ '\n> ' ~ brick.path %}
+              {% set _ = '> ' ~ brick.path ~ ' :\n' ~ _ %}
             {% endif %}
             {{ _ | markdownify | safe }}
             {% if _section == 'code' %}</details>{% endif %}

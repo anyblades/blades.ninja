@@ -5,6 +5,10 @@ eleventyNavigation:
   key: Frameworks
   order: 11
 title: CSS Framework Trends 2026-2040
+bricks:
+  - content_here: true
+  - md: ---
+  - path: ./css/_standalone.md
 ---
 
 | Framework            | Stats                                                                                                                                                 | 2011 | 2016           | 2017           | 2020           | 2025           | 🚥  | _2026_ | _2030_ | _2040_ |

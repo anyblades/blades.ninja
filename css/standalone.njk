@@ -5,14 +5,18 @@ eleventyNavigation:
   order: 3
 
 bricks:
+  - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md
+    section: standalone
   - content_here: true
-  - md: ---
-  - path: ./css/_standalone.md
-  - md: "## Theme"
+  - md: |-
+      ### Core unthemed versions
+      Most of internal Blades CSS modules are also available unthemed:
+  - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/blades.standalone.core.css
+    section: code
   - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/blades.standalone.theme.css
     section: code
 ---
 
 {% set _ = ('https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md' if site.prod else '../../blades/README.md')
   | fetch | section('install') %}
-{{ _ | replace('css/blades.', 'css/blades.standalone.') | replace('/blades";', '/blades/standalone";') | markdownify | safe }}
+{{ _ | replace('css/blades.', 'css/blades.standalone.') | markdownify | safe }}
