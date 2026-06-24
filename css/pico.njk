@@ -5,8 +5,8 @@ eleventyNavigation:
   order: 4
 
 === CONTENT: ===
-title: Pico CSS ✨ <mark>fork</mark>
-description: https://github.com/anyblades/pico
+title: Pico CSS ✨
+description: https://github.com/anyblades/pico fork
 bricks:
   - path: https://raw.githubusercontent.com/anyblades/pico/refs/heads/main/README.md
     section: docs
@@ -18,6 +18,8 @@ bricks:
 {{ ('https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md' if site.prod else '../../blades/README.md')
   | fetch | section('install')
   | replace('/blades/archive/', '/pico/archive/')
+  | replace('`css/blades.', '`css/pico.')
+  | replace('"css/blades.', '"css/pico.')
   | replace('@anyblades/blades@', '@anyblades/pico@')
-  | replace('css/blades.', 'css/pico.blades.')
+  | replace('/blades.min.', '/pico.min.')
   | markdownify | safe }}
