@@ -48,6 +48,16 @@
     order: 0
   bricks:
     - path: https://picocss.com/docs/container
+- permalink: /css/breakout/
+  eleventyNavigation:
+    parent: Layout
+    key: Breakout container <mark>NEW</mark>
+    order: 1
+  description: "[Available standalone &nbsp;›](/css/standalone/){role=button .outline}"
+  bricks:
+    - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/breakout.css
+      sections: [docs, code]
+  revised: 2026-05-03
 - permalink: /css/landmarks-section/
   eleventyNavigation:
     parent: Layout
@@ -105,6 +115,17 @@
     order: 1
   bricks:
     - path: https://picocss.com/docs/link
+- permalink: /css/link-icon/
+  eleventyNavigation:
+    parent: Content
+    key: Link icon <mark>NEW</mark>
+    order: 2
+  title: 'Link <code style="padding: 0">i</code>con'
+  description: "[Available standalone &nbsp;›](/css/standalone/){role=button .outline}"
+  bricks:
+    - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/link-icon.css
+      sections: [docs, code]
+  revised: 2026-05-03
 - permalink: /css/button/
   eleventyNavigation:
     parent: Content
@@ -121,6 +142,17 @@
     - path: https://picocss.com/docs/table
     - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/content/_table.css
       section: docs
+- permalink: /css/responsive-table/
+  eleventyNavigation:
+    parent: Content
+    key: Responsive table <mark>NEW</mark>
+    order: 6
+  title: Responsive table <sub style>without wrapping container</sub>
+  description: "[Available standalone &nbsp;›](/css/standalone/){role=button .outline}"
+  bricks:
+    - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/responsive-table.css
+      sections: [docs, code]
+  revised: 2026-05-03
 - permalink: /css/list/
   eleventyNavigation:
     parent: Content
