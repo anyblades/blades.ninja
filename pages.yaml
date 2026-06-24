@@ -17,7 +17,7 @@
   eleventyNavigation:
     parent: Get started
     key: Ninja add-ons <mark>NEW</mark>
-    order: 2
+    order: 5
   bricks:
     - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/blades.ninja.css
       section: docs
@@ -27,12 +27,12 @@
   eleventyNavigation:
     parent: Get started
     key: Color schemes
-    order: 3
+    order: 1
 - permalink: /css/variables/
   eleventyNavigation:
     parent: Get started
     key: CSS variables
-    order: 4
+    order: 2
   bricks:
     - path: https://picocss.com/docs/css-variables
 
