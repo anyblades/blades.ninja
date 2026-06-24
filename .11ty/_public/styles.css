@@ -90,12 +90,18 @@ h1 sup {
   font-weight: 600;
   border-radius: 0.125rem;
 }
-[role="button"]:is(:hover, :focus-visible) {
-  /* .fa-tailwind-css {
-    color: deepskyblue;
-  } */
-  .fa-bootstrap {
-    color: blueviolet;
+
+/* Colorize FA icons */
+.fa-tailwind-css {
+  color: deepskyblue;
+}
+.fa-bootstrap {
+  color: blueviolet;
+}
+/* ... except hovered buttons */
+[role="button"]:not(:hover, :focus-visible) {
+  [class^="fa-"] {
+    color: inherit;
   }
 }
 
