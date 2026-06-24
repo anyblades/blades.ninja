@@ -62,6 +62,10 @@
         "title": "<i class='fa-brands fa-mastodon fa-lg'></i>"
       },
       {
+        "url": "https://bsky.app/hashtag/BladesCSS",
+        "title": "<i class='fa-brands fa-bluesky'></i>"
+      },
+      {
         "url": "https://11ty.blades.ninja/",
         "title": "<i class='fa-brands fa-eleventy fa-sm faded'></i>"
       },
