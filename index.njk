@@ -29,8 +29,84 @@ bricks:
   {{ description | safe }}
 </section>
 
-<hr />
-<h2>
-  <sup style><span class="faded">Hi</span>story</sup>
-  From Pico CSS to Blades CSS
-</h2>
+{% renderTemplate 'md' %}
+---
+## <sup style><mark>Story</mark></sup> <small>From</small> Pico <small>to</small> <mark><em>Bl</em>ades CSS</mark>
+
+<div><table class="borderless">
+<tr><td colspan="2" class="has-timeline">
+
+<mark>Jun 5</mark>
+: [<i><img src="https://palletsprojects.com/static/pallets-logo.svg"></i> Flask & Jinja community website](https://palletsprojects.com/) switched to Blades
+
+<mark>Jun 1</mark>
+: [Grav CMS v2 migrated](https://getgrav.org/migrate-to-2#:~:text=blades) its default theme to Blades
+
+<mark>May 11, 2026</mark>
+: ### Blades CSS [v2.2.0](//github.com/anyblades/blades/releases/tag/v2.2.0) <mark>emerged</mark>
+
+</td></tr>
+<tr><td class="has-timeline" style="width: 50%">
+
+{hidden}
+: from original Pico CSS fork ...
+{.faded}
+
+Apr 2026
+: Pico CSS [v2.2.0](//github.com/anyblades/pico/releases/tag/v2.2.0) fork released
+: <br><br><br><br>
+
+Mar 2025
+: Last [v2.1.1](//github.com/picocss/pico/releases/tag/v2.1.1) update of Pico CSS
+
+Feb 2024
+: Pico CSS [v2](//github.com/picocss/pico/releases/tag/v2.0.0) released
+
+Dec 2019
+: Pico CSS [v1](//github.com/picocss/pico/releases/tag/v1.0.2) released
+
+</td><td class="has-timeline">
+
+{hidden}
+: ... and Blades&nbsp;CSS helpers
+{.faded .curved}
+
+Apr 2026
+: Blades CSS [v0](//github.com/anyblades/blades/releases/tag/v0.28.0) released</span>
+
+Dec 2025
+: Blades CSS helpers consolidation [started](//github.com/anyblades/blades/tree/601f481)
+
+Dec 2025
+: Breakout CSS [v1]() released
+: <br><br><br><br>
+
+Mar 2018
+: Atomic Gallery and Carousel components [created](//github.com/anyblades/atomic-gallery/commit/29cf131) [↗](//github.com/anyblades/atomic-carousel/commit/05c87e6)
+
+Oct 2016
+: Float Label CSS [v1](//github.com/anyblades/blades/releases/tag/v1.0.0) released
+
+</td></tr>
+</table></div>
+<style>
+  table:has(dl) {
+    td { padding-block: 0; padding-inline-end: 0; }
+    dl { margin: 0 }
+    dt { font-size: small }
+    dd { margin-inline-start: 1rem; }
+    dd.faded { border-inline-start-style: dotted }
+    dd.curved {
+      border-color: transparent;
+      position: relative;
+      &::before {
+        content: " ";
+        position: absolute; bottom: 0; right: 100%;
+        width: 100%; height: 120%;
+        border-right: 0.25rem dotted gray;
+        border-radius: 0 999px 0 0;
+      }
+    }
+  }
+</style>
+{% endrenderTemplate %}
