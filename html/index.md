@@ -17,7 +17,7 @@ cd _includes # or where your includes dir is
 ln -s ../node_modules/@anyblades/blades/_includes/blades
 ```
 
-That's it! Now you can include templates from Blades like this:
+That's it! Now you can reuse templates from Blades like this:
 
 <div class="grid breakout-item-max">
 
@@ -106,6 +106,12 @@ Official docs:
 That's it! Thanks to Shopify, you do not need to install Prettier separately to format your Liquid code.
 
 The `Shopify.theme-check-vscode` extension comes bundled with its own instance of the Prettier Liquid plugin, so it works completely out of the box.
+
+---
+
+### Twig `.twig` <mark>NEW</mark>
+
+Docs in progress.
 
 ---
 
