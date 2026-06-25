@@ -2,9 +2,9 @@
 permalink: /css/frameworks/
 eleventyNavigation:
   parent: Get started
-  key: Frameworks
+  key: CSS Frameworks <mark>2026–2040</mark>
   order: 11
-title: CSS Frameworks 2026-2040
+title: CSS Frameworks 2026–2040
 ---
 
 | Framework       | 2011           | 2013           | 2014           | 2016           | 2017           | 2020           | 2022           | 2025           | 🚥  | _2026_           | _2030_           | _2040_           |
