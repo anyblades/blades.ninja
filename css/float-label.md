@@ -3,12 +3,7 @@ eleventyNavigation:
   parent: Forms
   key: Float labels <mark>NEW</mark>
   order: 7
-description: https://github.com/anyblades/float-label-css
-# eleventyComputed:
-#   summary: |-
-#     {{ 'https://raw.githubusercontent.com/anyblades/float-label-css/refs/heads/master/README.md'
-#      | if: site.prod | default: '../../float-label-css/README.md' | fetch | section: 'summary' | markdownify }}
-
+description: "[Available standalone &nbsp;›](/css/standalone/){role=button .outline}"
 bricks:
   - content_here: true
   - path: https://raw.githubusercontent.com/anyblades/float-label-css/refs/heads/master/README.md
@@ -18,7 +13,6 @@ bricks:
       ## How it works {#how}
   - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/float-label.core.css
     section: docs
-
 revised: 2026-05-03
 ---
 
