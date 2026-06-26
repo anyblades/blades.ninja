@@ -18,8 +18,6 @@ revised: 2026-05-03
 
 ## Demo
 
-Drop-in support for **Pico**'s https://picocss.com/docs/forms :
-
 <article>
   <!-- Sample markup from https://codepen.io/anton-staroverov/pen/JRLaKw -->
   <form>
