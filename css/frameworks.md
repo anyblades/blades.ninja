@@ -23,7 +23,10 @@ title: CSS Frameworks 2026–2040
 
 <style>table {
   big { font-weight: bold }
-  :is(th, td):not(:first-child) { text-align: center }
+  :is(th, td) {
+    vertical-align: middle;
+    &:not(:first-child) { text-align: center }
+  }
   tbody tr:nth-last-child(-n+6) { opacity: 50% }
   tbody tr:nth-last-child(-n+2) { opacity: 25% }
 }</style>

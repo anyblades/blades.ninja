@@ -168,7 +168,7 @@
     order: 8
   bricks:
     - path: https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/src/content/_code.css
-      section: docs
+      sections: [docs, code]
 
 # Forms
 - permalink: /css/forms/
