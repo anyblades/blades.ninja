@@ -11,7 +11,7 @@
     "start": "npm run do -- start",
     "stage": "npm run do -- stage",
     "build": "npm run do -- build",
-    "do2": "IN=../../docs/ npm run do",
+    "do2": "IN=../../content/ npm run do",
     "start2": "npm run do2 -- start",
     "stage2": "npm run do2 -- stage",
     "build2": "npm run do2 -- build"
