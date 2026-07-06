@@ -6,6 +6,7 @@ eleventyComputed:
     {{ ('https://raw.githubusercontent.com/anyblades/blades/refs/heads/main/README.md' if site.prod else '../../blades/README.md')
       | fetch | section('summary') | markdownify | safe }}
   title: "Blades • {{ description | split('</h1>') | first | striptags }}"
+  hero: "{{ description | safe }}"
 bricks:
   - content_here: true
   - md: |-
@@ -24,10 +25,6 @@ bricks:
     font-style: normal;
   }
 </style>
-
-<section class="hero">
-  {{ description | safe }}
-</section>
 
 {% renderTemplate 'md' %}
 ---

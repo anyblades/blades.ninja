@@ -37,7 +37,9 @@
   </header>
   {% block main %}
   <main class="container breakout-all">
-    {% if page.url != '/' %}
+    {% if hero %}
+      <section class="hero">{{ hero | safe }}</section>
+    {% else %}
       <h1>
         {% if eleventyNavigation.parent %}<sup style>{{ eleventyNavigation.parent | safe }}</sup>{% endif %}
         {% if title %}{% include './h1.njk' %}{% endif %}
