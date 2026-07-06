@@ -48,6 +48,7 @@
       "https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-core.min.js",
       "https://cdn.jsdelivr.net/npm/prismjs@1/plugins/autoloader/prism-autoloader.min.js"
     ],
+    "header_sitenav_label": "<a href='/#docs'>Docs</a><span class='faded'>|</span>",
     "header_links": [
       {
         "url": "https://github.com/anyblades/blades",

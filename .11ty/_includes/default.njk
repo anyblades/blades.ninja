@@ -16,9 +16,8 @@
       {#TODO: add "Nav brand" helper #}
       <big><a href="/">{{ site.brand | safe }}</a></big>
       <ul>
-        <li class="nav-docs">
-          <a href="/#docs">Docs</a>
-          <span class="faded">|</span>
+        <li class="sitenav">
+          {{ site.header_sitenav_label | safe }}
           {% for page in collections.all | eleventyNavigation %}
             {% set _subnav = collections.all | eleventyNavigation(page.key) | eleventyNavigationToHtml %}
             {% if _subnav %}

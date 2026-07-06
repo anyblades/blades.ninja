@@ -15,7 +15,7 @@ body > header nav {
       align-items: baseline;
     }
   }
-  li.nav-docs {
+  li.sitenav {
     text-wrap: balance;
     text-align: end;
 
