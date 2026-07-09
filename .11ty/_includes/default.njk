@@ -8,6 +8,7 @@
 
 {% set content_for_header %}
   <meta name="generator" content="{{ site.generator }}">
+  <meta property="og:title" content="{{ title | striptags }}">
   {{ content_for_header | safe }}
 {% endset %}
 
