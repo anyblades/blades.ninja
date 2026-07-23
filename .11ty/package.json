@@ -58,12 +58,12 @@
         "title": "<i class='fa-brands fa-x-twitter fa-lg'></i>"
       },
       {
-        "url": "https://mastodon.social/@anydigital",
-        "title": "<i class='fa-brands fa-mastodon fa-lg'></i>"
+        "url": "https://bsky.app/profile/any.digital",
+        "title": "<i class='fa-brands fa-bluesky'></i>"
       },
       {
-        "url": "https://bsky.app/hashtag/BladesCSS",
-        "title": "<i class='fa-brands fa-bluesky'></i>"
+        "url": "https://mastodon.social/@anydigital",
+        "title": "<i class='fa-brands fa-mastodon fa-lg'></i>"
       },
       {
         "url": "https://11ty.blades.ninja/",
